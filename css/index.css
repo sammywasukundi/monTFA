@@ -683,8 +683,8 @@ footer{
     width: 90%;
     height: 24vh;
     margin-left: 5%;
-    margin-top: 45%;
-    position: absolute;
+    margin-top: 55%;
+    position: relative;
 }
 .mot p{
     text-align: center;
