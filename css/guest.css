@@ -1,0 +1,604 @@
+/*GEUST HOUSE CSS*/
+h5{
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    left: 35%;
+    position: absolute;
+    font-size: 22px;
+}
+h6{
+    justify-content: left;
+    top: 2%;
+    left: 4%;
+    position: absolute;
+    font-size: 18px;
+    font-weight: lighter;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    opacity: 0.4;
+    text-shadow: 1px 1px 1px rgb(46, 45, 45);
+}
+p{
+    font-weight: lighter;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    text-align: center;
+
+
+}
+
+/* ccs de nairobi*/
+
+#n{
+    top: 5px;
+    left: 27.5%;
+    height: 8vh;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    letter-spacing: 25px;
+    font-size: 30px;
+    background: rgb(242, 245, 247);
+    border-radius: 10px 10px 10px 10px;
+}
+#n:hover{
+    background: rgb(42, 147, 196);
+    text-shadow: 1px 1px 1px rgb(14, 14, 14);
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+}
+.nairobi{
+    width: 95%;
+    height: 45vh;
+    top: 20px;
+    position: relative;
+    box-shadow: none;
+
+}
+
+.chambre1{
+    position: absolute;
+    width: 20%;
+    height: 95%;
+    top: 6px;
+    left: 4%;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 1px 1px 1px 1px rgb(222, 233, 233);
+    background: url(../images/hotel_kronasar_aussen_see_europa-park.jpg);
+    background-attachment: fixed;
+}
+.chambre1 .btnReserver1{
+    left: 30%;
+    top: 85%;
+    position: absolute;
+    width: 100px;
+    height: 5vh;
+    border: none;
+    border-radius: 15px 15px 15px 15px;
+    color: rgb(0, 0, 0);
+}
+.chambre2{
+    position: absolute;
+    width: 20%;
+    height: 95%;
+    top: 6px;
+    left: 28%;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 1px 1px 1px 1px rgb(222, 233, 233);
+    box-shadow: 1px 1px 1px 1px rgb(222, 233, 233);
+    background: url(../images/hotel_kronasar_aussen_see_europa-park.jpg);
+}
+.chambre2 .btnReserver2{
+    left: 30%;
+    top: 85%;
+    position: absolute;
+    width: 100px;
+    height: 5vh;
+    border: none;
+    border-radius: 15px 15px 15px 15px;
+    color: rgb(0, 0, 0);
+}
+.chambre3{
+    position: absolute;
+    width: 20%;
+    height: 95%;
+    top: 6px;
+    left: 52%;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 1px 1px 1px 1px rgb(222, 233, 233);
+    background: url(../images/hotel_kronasar_aussen_see_europa-park.jpg);
+}
+.chambre3 .btnReserver3{
+    left: 30%;
+    top: 85%;
+    position: absolute;
+    width: 100px;
+    height: 5vh;
+    border: none;
+    border-radius: 15px 15px 15px 15px;
+    color: rgb(0, 0, 0);
+}
+.chambre4{
+    position: absolute;
+    width: 20%;
+    height: 95%;
+    top: 6px;
+    left: 76%;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 1px 1px 1px 1px rgb(222, 233, 233);
+    background: url(../images/hotel_kronasar_aussen_see_europa-park.jpg);
+}
+.chambre4 .btnReserver4{
+    left: 30%;
+    top: 85%;
+    position: absolute;
+    width: 100px;
+    height: 5vh;
+    border: none;
+    border-radius: 15px 15px 15px 15px;
+    color: rgb(0, 0, 0);
+}
+
+
+.conteneur-calendrier-hover1{
+    position: relative;
+    top: 30px;
+    left: 90px;
+    border: none;
+    width: 12%;
+    height: 24vh;
+    padding: 20px 40px;
+}
+.conteneur-calendrier-hover1:hover{
+    background: rgb(238, 238, 238);
+}
+.conteneur-calendrier-hover1 #btnValider1{
+    left: 15%;
+    top: 80%;
+    position: absolute;
+    width: 90px;
+    height: 5vh;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+.conteneur-calendrier-hover1 #btnAnnuler1{
+    left: 53%;
+    top: 80%;
+    position: absolute;
+    width: 90px;
+    height: 5vh;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+.conteneur-calendrier-hover1 input{
+    width: 100%;
+    height: 5vh;
+    margin: 0px 4px;
+}
+#btnValider1, #btnAnnuler1{
+    display: none;
+}
+
+
+
+.conteneur-calendrier-hover2{
+    position: relative;
+    top: -162px;
+    left: 400px;
+    border: none;
+    width: 12%;
+    height: 24vh;
+    padding: 20px 40px;
+}
+.conteneur-calendrier-hover2:hover{
+    background: rgb(238, 238, 238);
+}
+.conteneur-calendrier-hover2 #btnValider2{
+    left: 15%;
+    top: 80%;
+    position: absolute;
+    width: 90px;
+    height: 5vh;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+.conteneur-calendrier-hover2 #btnAnnuler2{
+    left: 53%;
+    top: 80%;
+    position: absolute;
+    width: 90px;
+    height: 5vh;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+.conteneur-calendrier-hover2 input{
+    width: 100%;
+    height: 5vh;
+    margin: 0px 4px;
+}
+#btnValider2, #btnAnnuler2{
+    display: none;
+}
+
+
+
+.conteneur-calendrier-hover3{
+    position: relative;
+    top: -356px;
+    left: 710px;
+    border: none;
+    width: 12%;
+    height: 24vh;
+    padding: 20px 40px;
+}
+.conteneur-calendrier-hover3:hover{
+    background: rgb(238, 238, 238);
+}
+.conteneur-calendrier-hover3 #btnValider3{
+    left: 15%;
+    top: 80%;
+    position: absolute;
+    width: 90px;
+    height: 5vh;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+.conteneur-calendrier-hover3 #btnAnnuler3{
+    left: 53%;
+    top: 80%;
+    position: absolute;
+    width: 90px;
+    height: 5vh;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+.conteneur-calendrier-hover3 input{
+    width: 100%;
+    height: 5vh;
+    margin: 0px 4px;
+}
+#btnValider3, #btnAnnuler3{
+    display: none;
+}
+
+
+.conteneur-calendrier-hover4{
+    position: relative;
+    top: -549px;
+    left: 1017px;
+    border: none;
+    width: 12%;
+    height: 24vh;
+    padding: 20px 40px;
+}
+.conteneur-calendrier-hover4:hover{
+    background: rgb(238, 238, 238);
+}
+.conteneur-calendrier-hover4 #btnValider4{
+    left: 15%;
+    top: 80%;
+    position: absolute;
+    width: 90px;
+    height: 5vh;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+.conteneur-calendrier-hover4 #btnAnnuler4{
+    left: 53%;
+    top: 80%;
+    position: absolute;
+    width: 90px;
+    height: 5vh;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+.conteneur-calendrier-hover4 input{
+    width: 100%;
+    height: 5vh;
+    margin: 0px 4px;
+}
+#btnValider4, #btnAnnuler4{
+    display: none;
+}
+
+/* fin ccs de nairobi*/
+/*
+@media all and (max-width: 1000px){
+    header .conteneur .menus{
+        width: 90%;
+    }
+}
+*/
+
+/* ccs de kinshassa*/
+
+#k{
+    top: -460px;
+    left: 27.5%;
+    height: 8vh;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    letter-spacing: 25px;
+    font-size: 30px;
+    background: rgb(242, 245, 247);
+    border-radius: 10px 10px 10px 10px;
+}
+#k:hover{
+    background: rgb(42, 147, 196);
+    text-shadow: 1px 1px 1px rgb(14, 14, 14);
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+}
+.kinshasa{
+    width: 95%;
+    height: 45vh;
+    top:-160px;
+    left: -33.7%;
+    position: relative;
+    box-shadow: none;
+
+
+}
+
+.chambre5{
+    position: absolute;
+    width: 20%;
+    height: 95%;
+    top: 6px;
+    left: 4%;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 1px 1px 1px 1px rgb(222, 233, 233);
+    background: url(../images/hotel_kronasar_aussen_see_europa-park.jpg);
+    background-attachment: fixed;
+}
+.chambre5 .btnReserver5{
+    left: 30%;
+    top: 85%;
+    position: absolute;
+    width: 100px;
+    height: 5vh;
+    border: none;
+    border-radius: 15px 15px 15px 15px;
+    color: rgb(0, 0, 0);
+}
+.chambre6{
+    position: absolute;
+    width: 20%;
+    height: 95%;
+    top: 6px;
+    left: 28%;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 1px 1px 1px 1px rgb(222, 233, 233);
+    box-shadow: 1px 1px 1px 1px rgb(222, 233, 233);
+    background: url(../images/hotel_kronasar_aussen_see_europa-park.jpg);
+}
+.chambre6 .btnReserver6{
+    left: 30%;
+    top: 85%;
+    position: absolute;
+    width: 100px;
+    height: 5vh;
+    border: none;
+    border-radius: 15px 15px 15px 15px;
+    color: rgb(0, 0, 0);
+}
+.chambre7{
+    position: absolute;
+    width: 20%;
+    height: 95%;
+    top: 6px;
+    left: 52%;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 1px 1px 1px 1px rgb(222, 233, 233);
+    background: url(../images/hotel_kronasar_aussen_see_europa-park.jpg);
+}
+.chambre7 .btnReserver7{
+    left: 30%;
+    top: 85%;
+    position: absolute;
+    width: 100px;
+    height: 5vh;
+    border: none;
+    border-radius: 15px 15px 15px 15px;
+    color: rgb(0, 0, 0);
+}
+.chambre8{
+    position: absolute;
+    width: 20%;
+    height: 95%;
+    top: 6px;
+    left: 76%;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 1px 1px 1px 1px rgb(222, 233, 233);
+    background: url(../images/hotel_kronasar_aussen_see_europa-park.jpg);
+}
+.chambre8 .btnReserver8{
+    left: 30%;
+    top: 85%;
+    position: absolute;
+    width: 100px;
+    height: 5vh;
+    border: none;
+    border-radius: 15px 15px 15px 15px;
+    color: rgb(0, 0, 0);
+}
+
+
+.conteneur-calendrier-hover5{
+    position: relative;
+    top: 128px;
+    left: 90px;
+    border: none;
+    width: 12%;
+    height: 24vh;
+    padding: 20px 40px;
+}
+.conteneur-calendrier-hover5:hover{
+    background: rgb(238, 238, 238);
+}
+.conteneur-calendrier-hover5 #btnValider5{
+    left: 15%;
+    top: 80%;
+    position: absolute;
+    width: 90px;
+    height: 5vh;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+.conteneur-calendrier-hover5 #btnAnnuler5{
+    left: 53%;
+    top: 80%;
+    position: absolute;
+    width: 90px;
+    height: 5vh;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+.conteneur-calendrier-hover5 input{
+    width: 100%;
+    height: 5vh;
+    margin: 0px 4px;
+}
+#btnValider5, #btnAnnuler5{
+    display: none;
+}
+
+
+
+.conteneur-calendrier-hover6{
+    position: relative;
+    top: -65px;
+    left: 400px;
+    border: none;
+    width: 12%;
+    height: 24vh;
+    padding: 20px 40px;
+}
+.conteneur-calendrier-hover6:hover{
+    background: rgb(238, 238, 238);
+}
+.conteneur-calendrier-hover6 #btnValider6{
+    left: 15%;
+    top: 80%;
+    position: absolute;
+    width: 90px;
+    height: 5vh;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+.conteneur-calendrier-hover6 #btnAnnuler6{
+    left: 53%;
+    top: 80%;
+    position: absolute;
+    width: 90px;
+    height: 5vh;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+.conteneur-calendrier-hover6 input{
+    width: 100%;
+    height: 5vh;
+    margin: 0px 4px;
+}
+#btnValider6, #btnAnnuler6{
+    display: none;
+}
+
+
+
+.conteneur-calendrier-hover7{
+    position: relative;
+    top: -258px;
+    left: 710px;
+    border: none;
+    width: 12%;
+    height: 24vh;
+    padding: 20px 40px;
+}
+.conteneur-calendrier-hover7:hover{
+    background: rgb(238, 238, 238);
+}
+.conteneur-calendrier-hover7 #btnValider7{
+    left: 15%;
+    top: 80%;
+    position: absolute;
+    width: 90px;
+    height: 5vh;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+.conteneur-calendrier-hover7 #btnAnnuler7{
+    left: 53%;
+    top: 80%;
+    position: absolute;
+    width: 90px;
+    height: 5vh;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+.conteneur-calendrier-hover7 input{
+    width: 100%;
+    height: 5vh;
+    margin: 0px 4px;
+}
+#btnValider7, #btnAnnuler7{
+    display: none;
+}
+
+
+.conteneur-calendrier-hover8{
+    position: relative;
+    top: -452px;
+    left: 1017px;
+    border: none;
+    width: 12%;
+    height: 24vh;
+    padding: 20px 40px;
+}
+.conteneur-calendrier-hover8:hover{
+    background: rgb(238, 238, 238);
+}
+.conteneur-calendrier-hover8 #btnValider8{
+    left: 15%;
+    top: 80%;
+    position: absolute;
+    width: 90px;
+    height: 5vh;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+.conteneur-calendrier-hover8 #btnAnnuler8{
+    left: 53%;
+    top: 80%;
+    position: absolute;
+    width: 90px;
+    height: 5vh;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+.conteneur-calendrier-hover8 input{
+    width: 100%;
+    height: 5vh;
+    margin: 0px 4px;
+}
+#btnValider8, #btnAnnuler8{
+    display: none;
+}
+
+/* fin ccs de kinshasa*/
+/*
+@media all and (max-width: 1000px){
+    header .conteneur .menus{
+        width: 90%;
+    }
+}
+*/

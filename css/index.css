@@ -1,0 +1,875 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.conteneur{
+    width: 100%;
+    margin: auto;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    
+}
+
+.conteneur .menus{
+    left: 40%;
+    
+}
+header{
+    background: url("image.jpeg.webp") no-repeat 50% 50%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+.menus{
+    float: center;
+    position: absolute;
+    
+    list-style: none;
+    margin-top: 30px;
+    
+}
+.menus li{
+    display: inline-block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    position: relative;
+}
+.menus li a{
+    color: rgb(25, 26, 25);
+    text-decoration: none;
+    padding: 5px 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+
+}
+.menus li a:hover{
+   /* background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0));*/
+    box-shadow: 3px 3px 3px 3px rgb(222, 233, 233);
+    color: rgb(15, 14, 14);
+    border: 1px solid black;
+
+}
+.logo img{
+    position: absolute;
+    width: 60px;
+    float: left;
+    margin: 10px 30px;
+}
+.logo1 img{
+    width: 150px;
+    float: left;
+    margin: 280px -260px;
+}
+.logo2 img{
+    width: 150px;
+    float: left;
+    margin:300px -435px;
+}
+/*............*/
+@media all and (max-width: 1000px){
+    .logo1 img{
+        width: none;
+    }
+   
+}
+.bienvenue{
+    position: absolute;
+    width: 70%;
+    height: 30%;
+    height: auto;
+    margin: 15% 12%;
+    background: none;
+    border-radius: 16px 16px 16px 16px;
+    border: none;
+    
+
+}
+.bienvenue h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: 110px;
+    box-shadow: 1px 1px 1px 1px rgb(228, 230, 230);
+    text-shadow: 2px 2px 2px black;
+}
+/*............*/
+@media all and (max-width: 1000px){
+    header .menus{
+        width: 96%;
+    }
+    .conteneur{
+        width: 40%;
+        display: block;
+    }
+    .menus li{
+        font-size: 12px;
+        width: 96%;
+        
+    }
+    .menus{
+        text-align: left;
+    }
+    .bienvenue{
+        top: 30px;
+        
+    }
+    .bienvenue h1{
+        font-size: 60px;
+        box-shadow: none;
+    }
+}
+.pub{
+
+    float: center;
+    padding-top: 105px;
+    height: 24vh;
+}
+.pub h1,h3{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+}
+.pub h3{
+    margin-top: 10px;
+}
+/*............*/
+@media all and (max-width: 1000px){
+    .pub {
+        width: 90%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+.guest{
+    width: 95%;
+    height: 40vh;
+    /*border: none;*/
+    float: center;
+    margin: 50px 33px;
+}
+.nairobi{
+    width: 350px;
+    height: 85%;
+    margin: 20px 35px;
+    transform: translate(0%, 0%);
+    box-shadow: 1px 1px 1px 1px rgb(31, 34, 34);
+}
+.overlay{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.9s ease-in-out;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+    position: absolute;
+    border: 1px solid rgb(255, 255, 255);
+}
+.content{
+    top: 45%;
+    left: 25%;
+    transform: translate(0%, 0%);
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    text-align: center;
+    position: absolute;
+    
+}
+.btn{
+    width: 60px;
+    height: 30px;
+    margin: 20px 50px;
+}
+.btn a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 5px 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid white;
+    border-radius: 16px 16px 16px 16px;
+}
+.btn a:hover{
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    border-radius: 16px 16px 16px 16px;
+    background: white;
+}
+.nairobi:hover .overlay{
+    opacity: 0.8;
+}
+
+.kinshasa{
+    width: 350px;
+    height: 85%;
+    border: none;
+    position: relative;
+    margin: -18.78% 36.3%;
+    box-shadow: 1px 1px 1px 1px rgb(31, 34, 34);
+}
+.overlay2{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.9s ease-in-out;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+    position: absolute;
+    border: 1px solid rgb(255, 255, 255);
+}
+.content2{
+    top: 45%;
+    left: 25%;
+    transform: translate(0%, 0%);
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    text-align: center;
+    position: absolute;
+}
+.kinshasa:hover .overlay2{
+    opacity: 0.8;
+}
+.btn2{
+    width: 60px;
+    height: 30px;
+    margin: 20px 50px;
+}
+.btn2 a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 5px 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid white;
+    border-radius: 16px 16px 16px 16px;
+}
+.btn2 a:hover{
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    border-radius: 16px 16px 16px 16px;
+    background: white;
+}
+
+
+.autre{
+    width: 350px;
+    height: 85%;
+    border: none;
+    float: right;
+    margin: 0px 35px;
+    box-shadow: 1px 1px 1px 1px rgb(31, 34, 34);
+    position: relative;
+}
+.overlay3{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.9s ease-in-out;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+    position: absolute;
+    border: 1px solid rgb(255, 255, 255);
+}
+.content3{
+    top: 45%;
+    left: 25%;
+    transform: translate(0%, 0%);
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    text-align: center;
+    position: absolute;
+}
+.autre:hover .overlay3{
+    opacity: 0.8;
+}
+.btn3{
+    width: 60px;
+    height: 30px;
+    margin: 20px 50px;
+}
+.btn3 a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 5px 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid white;
+    border-radius: 16px 16px 16px 16px;
+}
+.btn3 a:hover{
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    border-radius: 16px 16px 16px 16px;
+    background: white;
+}
+/*
+@media all and (max-width: 1000px){
+    header .conteneur .menus{
+        width: 90%;
+    }
+}
+*/
+.etiquette{
+    width: 95%;
+    height: 40vh;
+    float: center;
+    margin: -60px 33px;
+}
+.nairobi1{
+    width: 350px;
+    height: 85%;
+    border: none;
+    margin: 20px 35px;
+    border-radius: 16px 16px 16px 16px;
+    box-shadow: 1px 1px 1px 1px rgb(222, 233, 233);
+    background: none;
+    text-align: left;
+}
+.kinshasa1{
+    width: 350px;
+    height: 85%;
+    border: none;
+    margin: -18.78% 36.3%;
+    border-radius: 16px 16px 16px 16px;
+    box-shadow: 1px 1px 1px 1px rgb(222, 233, 233);
+    background: none;
+}
+.autre1{
+    width: 350px;
+    height: 85%;
+    border: none;
+    float: right;
+    margin: 0px 35px;
+    border-radius: 16px 16px 16px 16px;
+    box-shadow: 1px 1px 1px 1px rgb(222, 233, 233);
+    background: none;
+}
+/*
+@media all and (max-width: 1000px){
+    header .conteneur .menus{
+        width: 90%;
+    }
+}
+*/
+.nairobi1 h2,.kinshasa1 h2,.autre1 h2{
+    font-weight: lighter;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+.nairobi1 p,.kinshasa1 p,.autre1 p{
+    font-weight: lighter;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 8px 8px;
+}
+/*
+@media all and (max-width: 1000px){
+    header .conteneur .menus{
+        width: 90%;
+    }
+}
+*/
+.pubcaf,.pubcaf2{
+    margin: 140px 80px;
+    float: left;
+    font-weight: lighter;
+
+}
+.pubcaf h1{
+    font-weight: lighter;
+}
+.pubcaf h3{
+    margin-top: 20px;
+}
+/*
+@media all and (max-width: 1000px){
+    header .conteneur .menus{
+        width: 90%;
+    }
+}
+*/
+.etiquettecaf{
+    width: 55%;
+    height: 70vh;
+    border: none;
+    float: right;
+    margin: 125px 33px;
+}
+.riz{
+    width: 352px;
+    height: 200px;
+    margin: 10px 10px;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 1px 1px 1px 1px rgb(222, 233, 233);
+}
+.patates{
+    width: 352px;
+    height: 200px;
+    margin: -212px 378px;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 1px 1px 1px 1px rgb(222, 233, 233);
+}
+.pommes{
+    width: 225px;
+    height: 210px;
+    margin: 225px 10px;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 1px 1px 1px 1px rgb(222, 233, 233);
+}
+.haricots{
+    width: 240px;
+    height: 210px;
+    margin: -437px 250px;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 1px 1px 1px 1px rgb(222, 233, 233);
+}
+.melange{
+    width: 225px;
+    height: 210px;
+    float: right;
+    margin: 220px 10px;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 1px 1px 1px 1px rgb(222, 233, 233);
+}
+/*
+@media all and (max-width: 1000px){
+    header .conteneur .menus{
+        width: 90%;
+    }
+}
+*/
+footer{
+    background: linear-gradient(rgba(252, 253, 233, 10), rgba(222, 233, 233, 10), rgba(250, 250, 252, 10));
+    height: 88vh;
+    background-size: cover;
+    background-position: center center;
+    margin-top: 50px;
+}
+.inscription{
+    width: 50%;
+    height: 24vh;
+    margin-left: 25%;
+    padding: 20px 2px;
+    border-bottom: 1px solid rgb(179, 183, 187);
+
+}
+.inscription input{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    color: rgb(67, 70, 73);
+    font-size: 20px;
+}
+.mail{
+    margin-left: 20%;
+    margin-top: 5%;
+    width: 200px;
+    height: 40px;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: none;
+}
+.btn-connexion{
+    margin-left: 52%;
+    margin-top: -6.5%;
+    height: 31px;
+    width: 100px;
+    border-radius: 7px 7px 7px 7px;
+    border: 1px solid rgb(255, 255, 255);
+    padding-top: 10px;
+    padding-left: 8px;
+    background: rgb(0, 0, 0);
+    opacity: 0.6;
+}
+.btn-connexion a{
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+.btn-connexion:hover{
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 7px 7px 7px 7px;
+    background: rgb(255, 255, 255);
+
+}
+.btn-connexion a:hover{
+    color: rgb(0, 0, 0); 
+}
+.btn-inscription{
+    margin-left: 70%;
+    margin-top: -6.45%;
+    height: 31px;
+    width: 84px;
+    border-radius: 7px 7px 7px 7px;
+    border: 1px solid rgb(255, 255, 255);
+    padding-top: 10px;
+    padding-left: 14px;
+    background: rgb(0, 0, 0);
+    opacity: 0.6;
+}
+.btn-inscription a{
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+.btn-inscription:hover{
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 7px 7px 7px 7px;
+    background: rgb(255, 255, 255);
+
+}
+.btn-inscription a:hover{
+    color: rgb(0, 0, 0); 
+}
+.me2{
+    margin-top: 10px;
+    padding-left: 160px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    position: absolute;
+}
+.me{
+    margin-top: 8px;
+    left: 35.2%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+/*
+@media all and (max-width: 1000px){
+    header .conteneur .menus{
+        width: 90%;
+    }
+}
+*/
+.liens{
+    width: 50%;
+    height: 24vh;
+    margin-left: 25%;
+    margin-top: 10px;
+    border-bottom: 1px solid rgb(163, 157, 157);
+}
+.Ghouse{
+    width: 30%;
+    height: 90%;
+    margin: 6px 10px;
+}
+.Ghouse h4{
+    padding: 3px 50px;
+    font-weight: lighter;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.Ghouse a{
+    text-decoration: none;
+    color: rgb(67, 70, 73);
+}
+.Ghouse a:hover{
+    color: rgb(0, 0, 0);
+}
+.Ghouse h3{
+    padding: 8px 0px;
+}
+.caf{
+    width: 30%;
+    height: 90%;
+    margin: -147px 235px;
+    transform: translate(0%, 0%);
+    border-right: 1px solid rgb(179, 183, 187);
+    border-left: 1px solid rgb(179, 183, 187);
+}
+.caf h3{
+    padding: 8px 0px;
+}
+.caf img{
+    width: 60%;
+    height: 70%;
+    opacity: 0.7;
+    padding-left: 40px;
+
+}
+.overlaycaf{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.9s ease-in-out;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+    position: absolute;
+}
+.contentcaf{
+    top: 45%;
+    left: 25%;
+    transform: translate(0%, 0%);
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    text-align: center;
+    position: absolute;
+    
+}
+.btncaf{
+    width: 120px;
+    height: 30px;
+    margin-left: -10px;
+}
+.btncaf a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 5px 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid white;
+    border-radius: 16px 16px 16px 16px;
+}
+.btncaf a:hover{
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    border-radius: 16px 16px 16px 16px;
+    background: white;
+}
+.caf:hover .overlaycaf{
+    opacity: 0.8;
+}
+.contact{
+    width: 30%;
+    height: 90%;
+    margin: 6px 460px;
+}
+.contact h3{
+    padding: 8px 0px;
+}
+.btnpropos{
+    width: 220px;
+    height: 30px;
+    margin-left: 23px;
+    margin-top: 26px;
+}
+.btnpropos a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 5px 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid white;
+    border-radius: 16px 16px 16px 16px;
+}
+.btnpropos a:hover{
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    border-radius: 16px 16px 16px 16px;
+    background: white;
+}
+/*
+@media all and (max-width: 1000px){
+    header .conteneur .menus{
+        width: 90%;
+    }
+}
+*/
+.mot{
+    width: 90%;
+    height: 24vh;
+    margin-left: 5%;
+    margin-top: 45%;
+    position: absolute;
+}
+.mot p{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    padding: 30px 50px;
+}
+
+/*
+@media all and (max-width: 1000px){
+    header .conteneur .menus{
+        width: 90%;
+    }
+}
+*/
+.ico-contact{
+    height: 35px;
+    width: 35px;
+    float: right;
+    top: 20px;
+    right: 70px;
+    position: relative;
+}
+.ico-contact a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-top: 5px;
+    padding: 4px 5px;
+    position: absolute;
+}
+.ico-contact a:hover{
+    color: rgb(40, 157, 211);
+    background: none;
+    border: 1px solid rgb(40, 157, 211);
+}
+
+.ico-contact-mail{
+    height: 35px;
+    width: 45px;
+    float: right;
+    top: 20px;
+    right: 120px;
+    position: absolute;
+}
+
+
+.ico-contact-mail p{
+    padding: 10px 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+/*
+@media all and (max-width: 1000px){
+    header .conteneur .menus{
+        width: 90%;
+    }
+}
+*/
+.menu-bas{
+    left: 25%;
+    top: 25px;
+    position: relative;
+    height: 10vh;
+    width: 50%;
+}
+.facebook{
+    height: 80%;
+    width: 40px;
+    top: 6px;
+    left: 5%;
+    position: absolute;
+    /*clip-path: ellipse(50% 50%);*/
+}
+.facebook a{
+    position: absolute;
+    padding: 10px 10px;
+    color: black;
+    
+}
+.facebook a:hover{
+    color: rgb(40, 157, 211);
+    background: none;
+}
+.github{
+    height: 80%;
+    width: 40px;
+    top: 6px;
+    left: 12%;
+    position: absolute;
+}
+.github a{
+    position: absolute;
+    padding: 10px 4px;
+    color: black;
+    
+}
+.github a:hover{
+    color: rgb(40, 157, 211);
+    background: none;
+}
+.whatsapp{
+    height: 80%;
+    width: 40px;
+    top: 6px;
+    left: 19%;
+    position: absolute;
+}
+.whatsapp a{
+    position: absolute;
+    padding: 10px 4px;
+    color: black;
+    
+}
+.whatsapp a:hover{
+    color: rgb(40, 157, 211);
+    background: none;
+}
+.instagram{
+    height: 80%;
+    width: 40px;
+    top: 6px;
+    left: 26%;
+    position: absolute;
+}
+.instagram a{
+    position: absolute;
+    padding: 10px 4px;
+    color: black;
+    
+}
+.instagram a:hover{
+    color: rgb(40, 157, 211);
+    background: none;
+}
+.telegram{
+    height: 80%;
+    width: 40px;
+    top: 6px;
+    left: 33%;
+    position: absolute;
+}
+.telegram a{
+    position: absolute;
+    padding: 10px 4px;
+    color: black;
+    
+}
+.telegram a:hover{
+    color: rgb(40, 157, 211);
+    background: none;
+}
+.numero{
+    height: 100%;
+    width: 160px;
+    left: 40%;
+    position: absolute;
+}
+.numero p, .adress p{
+    padding: 5px 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+.adress{
+    height: 100%;
+    width: 210px;
+    left: 65%;
+    position: absolute;
+}
+.bas{
+    left: 25%;
+    top: 75px;
+    position: relative;
+    height: 6vh;
+    width: 50%;
+}
+.bas p{
+    left: 25%;
+    top: 10px;
+    position: absolute;
+    letter-spacing: 3px;
+}
+
+
+
+
+
