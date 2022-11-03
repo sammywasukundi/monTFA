@@ -96,7 +96,7 @@ header{
     text-shadow: 2px 2px 2px black;
 }
 /*............*/
-@media screen and (max-width: 1000px){
+@media all and (max-width: 1000px){
     header .menus{
         width: 96%;
     }
@@ -108,19 +108,9 @@ header{
         font-size: 12px;
         width: 96%;
         
-        
     }
     .menus{
-        /*text-align: left;
-        
-        
-        align-items: flex-start;
-        */
-        width: 100%;
-        flex-direction: row;
-        display: flex;
-        justify-content: flex-start;
-        background: blue;
+        text-align: left;
     }
     .bienvenue{
         top: 30px;
@@ -693,8 +683,8 @@ footer{
     width: 90%;
     height: 24vh;
     margin-left: 5%;
-    margin-top: 55%;
-    position: relative;
+    margin-top: 45%;
+    position: absolute;
 }
 .mot p{
     text-align: center;
@@ -878,8 +868,3 @@ footer{
     position: absolute;
     letter-spacing: 3px;
 }
-
-
-
-
-

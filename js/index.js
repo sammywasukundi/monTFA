@@ -112,12 +112,10 @@ function reservation6(){
     document.querySelector("#btnValider6").style.display = "inline-block";
 }
 
-function reservation7(){
-      //document.querySelector(".btnReserver").addEventListener('click', ()=>{        
+function reservation7(){      
         document.querySelector(".btnReserver7").innerText = 'en attente...'; 
         document.querySelector("#btnAnnuler7").style.display = "inline-block";
         document.querySelector("#btnValider7").style.display = "inline-block";
-   // });
 }
 
 function reservation8(){
@@ -142,7 +140,7 @@ function calculSejour5(){
     const dateTwo = new Date(d2);
     const time = Math.abs(dateTwo - dateOne);
     const days = Math.ceil(time/ (1000 * 60 * 60 * 24));
-    var aPayer = 20 * days;
+    var aPayer = 10 * days;
     document.getElementById("output5").innerHTML = "vous ferez "+ days + " jour(s) \n et  vous paierez " + aPayer + '$';
 }
 
@@ -158,7 +156,7 @@ function calculSejour6(){
     const dateTwo = new Date(d2);
     const time = Math.abs(dateTwo - dateOne);
     const days = Math.ceil(time/ (1000 * 60 * 60 * 24));
-    var aPayer = 20 * days;
+    var aPayer = 10 * days;
     document.getElementById("output6").innerHTML = "vous ferez "+ days + " jour(s) \n et  vous paierez " + aPayer + '$';
 }
 
@@ -174,7 +172,7 @@ function calculSejour7(){
     const dateTwo = new Date(d2);
     const time = Math.abs(dateTwo - dateOne);
     const days = Math.ceil(time/ (1000 * 60 * 60 * 24));
-    var aPayer = 20 * days;
+    var aPayer = 10 * days;
     document.getElementById("output7").innerHTML = "vous ferez "+ days + " jour(s) \n et  vous paierez " + aPayer + '$';
 }
 
@@ -190,7 +188,72 @@ function calculSejour8(){
     const dateTwo = new Date(d2);
     const time = Math.abs(dateTwo - dateOne);
     const days = Math.ceil(time/ (1000 * 60 * 60 * 24));
-    var aPayer = 20 * days;
+    var aPayer = 10 * days;
     document.getElementById("output8").innerHTML = "vous ferez "+ days + " jour(s) \n et  vous paierez " + aPayer + '$';
 }
 // fin des boutons de calculSejour nairobi
+
+
+
+
+// btn annuler
+
+/*
+const commands = []
+const input = document.querySelector('#dated1')
+
+function saveCommand(e) {
+  commands.push({
+    // the action is also saved for implementing redo, which
+    // is not implemented in this example.
+    action: { type: 'add', key: e.key, index: dated1.selectionStart },
+    inverse: { type: 'remove', index: dated1.selectionStart }
+  })
+}
+
+function undo() {
+  let value = input.value.split('')
+  const lastCommand = commands.pop()
+ 
+  if (!lastCommand) return
+    
+  switch (lastCommand.inverse.type) {
+    case 'remove':
+      value.splice(lastCommand.inverse.index, 1)
+      break;      
+  }
+  
+  input.value = value.join('')
+}
+  
+
+
+let inpute = document.querySelector(".input");
+let buttone = document.querySelector(".button");
+button.disabled = true;
+input.addEventListener("change", stateHandle);
+function stateHandle() {
+  if (document.querySelector(".input").value === " ") {
+    button.disabled = true; 
+  } else {
+    button.disabled = false;
+  }
+}
+
+*/
+function reservAutre(){
+  document.querySelector("#btn-autres").style.display = "inline-block";
+  document.querySelector("#btn-autres-clear").style.display = "inline-bloc";
+}
+
+const clicquer = () =>{
+  localStorage.setItem("nom",nom.value);
+
+  document.querySelector("#slide-1").innerHTML = "Occupée par " + nom.value;
+}
+
+const clear = () =>{
+  localStorage.clear();
+  document.location.reload();
+  
+}
