@@ -37,6 +37,13 @@ function calculSejour1(){
     document.querySelector("#btnAnnuler1").style.display = "none";
     document.querySelector("#btnValider1").style.display = "none";
 
+    const client1 = {
+      dated1:dated1.value,
+      datef1:datef1.value
+    }
+
+    localStorage.setItem(JSON.stringify("dated1",client1));
+
     var d1 = document.getElementById("dated1").value;
     var d2 = document.getElementById("datef1").value;
     const dateOne = new Date(d1);
@@ -247,13 +254,35 @@ function reservAutre(){
 }
 
 const clicquer = () =>{
-  localStorage.setItem("nom",nom.value);
 
-  document.querySelector("#slide-1").innerHTML = "Occupée par " + nom.value;
+  const client = {
+    nom:nom.value,
+    date_arriver:date_arriver.value,
+    date_depart:date_depart.value,
+    Chambre:Chambre.value
+  }
+
+    localStorage.setItem("nom",JSON.stringify(client));
+   
+    var d1 = document.getElementById("date_arriver").value;
+    var d2 = document.getElementById("date_depart").value;
+    var nbreChambre = document.getElementById("Chambre").value;
+    const dateOne = new Date(d1);
+    const dateTwo = new Date(d2);
+    const time = Math.abs(dateTwo - dateOne);
+    const days = Math.ceil(time/ (1000 * 60 * 60 * 24));
+    var aPayer = nbreChambre * 7 * days;
+    document.querySelector(".slides-div").style.display="none";
+    //document.querySelector("#slide_1").innerHTML = "Occupée par " + nom.value + " qui fera " + days + " jours \n , il paiera " + aPayer + "$" ;
+    alert(" chambre occupée par " + nom.value + " qui fera " + days + " jours \n , il paiera " + aPayer + "$" )
+    document.querySelector("#btn-autres").style.display = "none";
 }
+
+
+
 
 const clear = () =>{
   localStorage.clear();
-  document.location.reload();
-  
+  //document.location.reload();
+
 }

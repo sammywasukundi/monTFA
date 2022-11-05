@@ -638,7 +638,7 @@ p{
     width: 150px;
     height: 170px;
     transition: .5s;
-    filter: saturate(10%);
+    filter: saturate(5%);
     box-shadow: 1px 1px 1px 1px rgb(81, 81, 82);
     
 }
@@ -760,7 +760,7 @@ section{
 }
 section form{
     top: -190px;
-    color: rgb(16, 88, 151);
+    color: rgb(0, 0, 0);
     display: inline-block;
     margin: 20px 80px;
     padding: 25px 5px;
@@ -790,6 +790,62 @@ section form:hover{
 #btn-autres-clear{
     width: 11vw;
     margin-left: 4px;
-
+}
+#slide_1, #slide-2, #slide-3, #slide-4, #slide-5, 
+#slide-6, #slide-7, #slide-8, #slide-9, #slide-10{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
 }
 
+
+
+#a{
+    top: -390px;
+    left: 21%;
+    height: 8vh;
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    letter-spacing: 25px;
+    font-size: 30px;
+    background: rgb(242, 245, 247);
+    border-radius: 10px 10px 10px 10px;
+}
+#a:hover{
+    background: rgb(42, 147, 196);
+    text-shadow: 1px 1px 1px rgb(14, 14, 14);
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+}
+#profit{
+    top: -340px;
+    left: -18px;
+    position: relative;
+}
+
+/* mes png*/
+
+.mesPng{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 10px 20px;
+    align-items: center;
+}
+img{
+    width: 27vw;
+    height: 60vh;
+    flex-direction: column;
+    margin: -162px -20px;
+    padding: 5px 20px;
+    transition: 0.2s;
+    overflow: hidden;
+    
+}
