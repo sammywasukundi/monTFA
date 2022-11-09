@@ -9,6 +9,68 @@
     border-bottom: 2px solid rgb(255, 255, 255);
     
 }
+.btn-connexion1{
+    margin-left: 28%;
+    margin-top: 20px;
+    height: 28px;
+    width: 120px;
+    border-radius: 20px 20px 20px 20px;
+    border: none;
+    padding-top: 8px;
+    padding-left: 0px;
+    background: rgb(0, 0, 0);
+    opacity: 0.6;
+    position: absolute;
+    text-align: center;
+}
+.btn-connexion1 a{
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+.btn-connexion1:hover{
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 20px 20px 20px 20px;
+    background: rgb(255, 255, 255);
+
+}
+.btn-connexion1 a:hover{
+    color: rgb(0, 0, 0); 
+}
+
+.btn-inscription1{
+    margin-left: 21%;
+    margin-top: 20px;
+    height: 30px;
+    width: 84px;
+    border-radius: 20px 20px 20px 20px;
+    border: none;
+    padding-top: 6px;
+    background: rgb(0, 0, 0);
+    opacity: 0.6;
+    position: absolute;
+    text-align: center;
+}
+.btn-inscription1 a{
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+.btn-inscription1:hover{
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 20px 20px 20px 20px;
+    background: rgb(255, 255, 255);
+
+}
+.btn-inscription1 a:hover{
+    color: rgb(0, 0, 0); 
+}
 
 .conteneur .menus{
     left: 40%;
@@ -775,7 +837,7 @@ footer{
     
 }
 .facebook a:hover{
-    color: rgb(40, 157, 211);
+    color: rgb(28, 99, 133);
     background: none;
 }
 .github{
@@ -792,7 +854,7 @@ footer{
     
 }
 .github a:hover{
-    color: rgb(40, 157, 211);
+    color: rgb(17, 17, 17);
     background: none;
 }
 .whatsapp{
@@ -809,7 +871,7 @@ footer{
     
 }
 .whatsapp a:hover{
-    color: rgb(40, 157, 211);
+    color: rgb(13, 243, 205);
     background: none;
 }
 .instagram{
@@ -826,7 +888,7 @@ footer{
     
 }
 .instagram a:hover{
-    color: rgb(40, 157, 211);
+    color: rgb(221, 22, 228);
     background: none;
 }
 .telegram{

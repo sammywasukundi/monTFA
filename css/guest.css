@@ -15,7 +15,7 @@ h6{
     font-size: 18px;
     font-weight: lighter;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    opacity: 0.4;
+    opacity: 0.8;
     text-shadow: 1px 1px 1px rgb(46, 45, 45);
 }
 p{
@@ -42,15 +42,10 @@ p{
     font-weight: bold;
     letter-spacing: 25px;
     font-size: 30px;
-    background: rgb(242, 245, 247);
+    border: 1px solid rgb(242, 245, 247);
     border-radius: 10px 10px 10px 10px;
 }
-#n:hover{
-    background: rgb(42, 147, 196);
-    text-shadow: 1px 1px 1px rgb(14, 14, 14);
-    border-radius: 10px 10px 10px 10px;
-    color: white;
-}
+
 .nairobi{
     width: 95%;
     height: 45vh;
@@ -66,10 +61,14 @@ p{
     height: 95%;
     top: 6px;
     left: 4%;
-    border-radius: 15px 15px 15px 15px;
-    box-shadow: 1px 1px 1px 1px rgb(222, 233, 233);
-    background: url(../images/hotel_kronasar_aussen_see_europa-park.jpg);
-    background-attachment: fixed;
+    box-shadow: 1px 1px 1px 1px rgb(141, 145, 145);
+    border: 8px solid rgb(253, 253, 253);
+    filter: contrast(80%);
+}
+.chambre1:hover{
+    box-shadow: 5px 5px 5px 5px rgb(141, 145, 145);
+    border: 8px solid rgb(253, 253, 253);
+    filter: none;
 }
 .chambre1 .btnReserver1{
     left: 30%;
@@ -87,10 +86,14 @@ p{
     height: 95%;
     top: 6px;
     left: 28%;
-    border-radius: 15px 15px 15px 15px;
-    box-shadow: 1px 1px 1px 1px rgb(222, 233, 233);
-    box-shadow: 1px 1px 1px 1px rgb(222, 233, 233);
-    background: url(../images/hotel_kronasar_aussen_see_europa-park.jpg);
+    box-shadow: 1px 1px 1px 1px rgb(141, 145, 145);
+    border: 8px solid rgb(253, 253, 253);
+    filter: contrast(80%);
+}
+.chambre2:hover{
+    box-shadow: 5px 5px 5px 5px rgb(141, 145, 145);
+    border: 8px solid rgb(253, 253, 253);
+    filter: none;
 }
 .chambre2 .btnReserver2{
     left: 30%;
@@ -108,9 +111,14 @@ p{
     height: 95%;
     top: 6px;
     left: 52%;
-    border-radius: 15px 15px 15px 15px;
-    box-shadow: 1px 1px 1px 1px rgb(222, 233, 233);
-    background: url(../images/hotel_kronasar_aussen_see_europa-park.jpg);
+    box-shadow: 1px 1px 1px 1px rgb(141, 145, 145);
+    border: 8px solid rgb(253, 253, 253);
+    filter: contrast(80%);
+}
+.chambre3:hover{
+    box-shadow: 5px 5px 5px 5px rgb(141, 145, 145);
+    border: 8px solid rgb(253, 253, 253);
+    filter: none;
 }
 .chambre3 .btnReserver3{
     left: 30%;
@@ -128,9 +136,14 @@ p{
     height: 95%;
     top: 6px;
     left: 76%;
-    border-radius: 15px 15px 15px 15px;
-    box-shadow: 1px 1px 1px 1px rgb(222, 233, 233);
-    background: url(../images/hotel_kronasar_aussen_see_europa-park.jpg);
+    box-shadow: 1px 1px 1px 1px rgb(141, 145, 145);
+    border: 8px solid rgb(253, 253, 253);
+    filter: contrast(80%);
+}
+.chambre4:hover{
+    box-shadow: 5px 5px 5px 5px rgb(141, 145, 145);
+    border: 8px solid rgb(253, 253, 253);
+    filter: none;
 }
 .chambre4 .btnReserver4{
     left: 30%;
@@ -305,6 +318,23 @@ p{
     display: none;
 }
 
+#AreaNairobi{
+    top: 1520px;
+    width: 385px;
+    left: 20%;
+    position: absolute;
+}
+#enregistrer{
+    position: absolute;
+    top: 1550px;
+    left: 50%;
+    width: 100px;
+    height: 5vh;
+    border: none;
+    border-radius: 15px 15px 15px 15px;
+    color: rgb(0, 0, 0);
+}
+
 /* fin ccs de nairobi*/
 /*
 @media all and (max-width: 1000px){
@@ -317,7 +347,7 @@ p{
 /* ccs de kinshassa*/
 
 #k{
-    top: -460px;
+    top: -440px;
     left: 27.5%;
     height: 8vh;
     width: 45%;
@@ -329,19 +359,13 @@ p{
     font-weight: bold;
     letter-spacing: 25px;
     font-size: 30px;
-    background: rgb(242, 245, 247);
+    border: 1px solid rgb(242, 245, 247);
     border-radius: 10px 10px 10px 10px;
-}
-#k:hover{
-    background: rgb(42, 147, 196);
-    text-shadow: 1px 1px 1px rgb(14, 14, 14);
-    border-radius: 10px 10px 10px 10px;
-    color: white;
 }
 .kinshasa{
     width: 95%;
     height: 45vh;
-    top:-160px;
+    top:-140px;
     left: -33.7%;
     position: relative;
     box-shadow: none;
@@ -355,10 +379,14 @@ p{
     height: 95%;
     top: 6px;
     left: 4%;
-    border-radius: 15px 15px 15px 15px;
-    box-shadow: 1px 1px 1px 1px rgb(222, 233, 233);
-    background: url(../images/hotel_kronasar_aussen_see_europa-park.jpg);
-    background-attachment: fixed;
+    box-shadow: 1px 1px 1px 1px rgb(141, 145, 145);
+    border: 8px solid rgb(253, 253, 253);
+    filter: contrast(80%);
+}
+.chambre5:hover{
+    box-shadow: 5px 5px 5px 5px rgb(141, 145, 145);
+    border: 8px solid rgb(253, 253, 253);
+    filter: none;
 }
 .chambre5 .btnReserver5{
     left: 30%;
@@ -376,10 +404,14 @@ p{
     height: 95%;
     top: 6px;
     left: 28%;
-    border-radius: 15px 15px 15px 15px;
-    box-shadow: 1px 1px 1px 1px rgb(222, 233, 233);
-    box-shadow: 1px 1px 1px 1px rgb(222, 233, 233);
-    background: url(../images/hotel_kronasar_aussen_see_europa-park.jpg);
+    box-shadow: 1px 1px 1px 1px rgb(141, 145, 145);
+    border: 8px solid rgb(253, 253, 253);
+    filter: contrast(80%);
+}
+.chambre6:hover{
+    box-shadow: 5px 5px 5px 5px rgb(141, 145, 145);
+    border: 8px solid rgb(253, 253, 253);
+    filter: none;
 }
 .chambre6 .btnReserver6{
     left: 30%;
@@ -397,9 +429,14 @@ p{
     height: 95%;
     top: 6px;
     left: 52%;
-    border-radius: 15px 15px 15px 15px;
-    box-shadow: 1px 1px 1px 1px rgb(222, 233, 233);
-    background: url(../images/hotel_kronasar_aussen_see_europa-park.jpg);
+    box-shadow: 1px 1px 1px 1px rgb(141, 145, 145);
+    border: 8px solid rgb(253, 253, 253);
+    filter: contrast(80%);
+}
+.chambre7:hover{
+    box-shadow: 5px 5px 5px 5px rgb(141, 145, 145);
+    border: 8px solid rgb(253, 253, 253);
+    filter: none;
 }
 .chambre7 .btnReserver7{
     left: 30%;
@@ -417,9 +454,14 @@ p{
     height: 95%;
     top: 6px;
     left: 76%;
-    border-radius: 15px 15px 15px 15px;
-    box-shadow: 1px 1px 1px 1px rgb(222, 233, 233);
-    background: url(../images/hotel_kronasar_aussen_see_europa-park.jpg);
+    box-shadow: 1px 1px 1px 1px rgb(141, 145, 145);
+    border: 8px solid rgb(253, 253, 253);
+    filter: contrast(80%);
+}
+.chambre8:hover{
+    box-shadow: 5px 5px 5px 5px rgb(141, 145, 145);
+    border: 8px solid rgb(253, 253, 253);
+    filter: none;
 }
 .chambre8 .btnReserver8{
     left: 30%;
@@ -435,7 +477,7 @@ p{
 
 .conteneur-calendrier-hover5{
     position: relative;
-    top: 128px;
+    top: 150px;
     left: 90px;
     border: none;
     width: 12%;
@@ -476,7 +518,7 @@ p{
 
 .conteneur-calendrier-hover6{
     position: relative;
-    top: -65px;
+    top: -43px;
     left: 400px;
     border: none;
     width: 12%;
@@ -517,7 +559,7 @@ p{
 
 .conteneur-calendrier-hover7{
     position: relative;
-    top: -258px;
+    top: -238px;
     left: 710px;
     border: none;
     width: 12%;
@@ -557,7 +599,7 @@ p{
 
 .conteneur-calendrier-hover8{
     position: relative;
-    top: -452px;
+    top: -432px;
     left: 1017px;
     border: none;
     width: 12%;
@@ -594,6 +636,23 @@ p{
     display: none;
 }
 
+#AreaKinshasa{
+    top: 2250px;
+    width: 385px;
+    left: 20%;
+    position: absolute;
+}
+#enregistrer1{
+    position: absolute;
+    top: 2275px;
+    left: 50%;
+    width: 100px;
+    height: 5vh;
+    border: none;
+    border-radius: 15px 15px 15px 15px;
+    color: rgb(0, 0, 0);
+}
+
 /* fin ccs de kinshasa*/
 /*
 @media all and (max-width: 1000px){
@@ -606,7 +665,7 @@ p{
 /*debut du slider*/
 
 .slide-container{
-    top: -240px;
+    top: -210px;
     width: 100%;
     height: 45vh;
     display: flex;
@@ -803,7 +862,7 @@ section form:hover{
 
 
 #a{
-    top: -390px;
+    top: -280px;
     left: 21%;
     height: 8vh;
     width: 55%;
@@ -815,17 +874,11 @@ section form:hover{
     font-weight: bold;
     letter-spacing: 25px;
     font-size: 30px;
-    background: rgb(242, 245, 247);
+    border: 2px solid rgb(242, 245, 247);
     border-radius: 10px 10px 10px 10px;
-}
-#a:hover{
-    background: rgb(42, 147, 196);
-    text-shadow: 1px 1px 1px rgb(14, 14, 14);
-    border-radius: 10px 10px 10px 10px;
-    color: white;
 }
 #profit{
-    top: -340px;
+    top: -260px;
     left: -18px;
     position: relative;
 }
@@ -839,7 +892,7 @@ section form:hover{
     margin: 10px 20px;
     align-items: center;
 }
-img{
+#imglogo{
     width: 27vw;
     height: 60vh;
     flex-direction: column;

@@ -34,15 +34,8 @@ function reservation4 (){
 function calculSejour1(){
 
     document.querySelector(".btnReserver1").innerText = "Occupée";
-    document.querySelector("#btnAnnuler1").style.display = "none";
     document.querySelector("#btnValider1").style.display = "none";
-
-    const client1 = {
-      dated1:dated1.value,
-      datef1:datef1.value
-    }
-
-    localStorage.setItem(JSON.stringify("dated1",client1));
+    document.querySelector('.btnReserver1').setAttribute("disabled", "");
 
     var d1 = document.getElementById("dated1").value;
     var d2 = document.getElementById("datef1").value;
@@ -51,13 +44,12 @@ function calculSejour1(){
     const time = Math.abs(dateTwo - dateOne);
     const days = Math.ceil(time/ (1000 * 60 * 60 * 24));
     var aPayer = 20 * days;
-    document.getElementById("output1").innerHTML = "vous ferez "+ days + " jour(s) \n et  vous paierez " + aPayer + '$';
+    document.getElementById('AreaNairobi').value="chambre 1 : " + "vous ferez "+ days + " jour(s) et  vous paierez " + aPayer + '$';
 }
 
 function calculSejour2(){
 
     document.querySelector(".btnReserver2").innerText = "Occupée";
-    document.querySelector("#btnAnnuler2").style.display = "none";
     document.querySelector("#btnValider2").style.display = "none";
 
     var d1 = document.getElementById("dated2").value;
@@ -67,13 +59,14 @@ function calculSejour2(){
     const time = Math.abs(dateTwo - dateOne);
     const days = Math.ceil(time/ (1000 * 60 * 60 * 24));
     var aPayer = 20 * days;
-    document.getElementById("output2").innerHTML = "vous ferez "+ days + " jour(s) \n et  vous paierez " + aPayer + '$';
-}
+    document.getElementById('AreaNairobi').value="chambre 2 : " + "vous ferez "+ days + " jour(s) et  vous paierez " + aPayer + '$';
+
+    //document.getElementById('AreaNairobi').push();
+  }
 
 function calculSejour3(){
 
     document.querySelector(".btnReserver3").innerText = "Occupée";
-    document.querySelector("#btnAnnuler3").style.display = "none";
     document.querySelector("#btnValider3").style.display = "none";
 
     var d1 = document.getElementById("dated3").value;
@@ -83,13 +76,12 @@ function calculSejour3(){
     const time = Math.abs(dateTwo - dateOne);
     const days = Math.ceil(time/ (1000 * 60 * 60 * 24));
     var aPayer = 20 * days;
-    document.getElementById("output3").innerHTML = "vous ferez "+ days + " jour(s) \n et  vous paierez " + aPayer + '$';
+    document.getElementById('AreaNairobi').value="chambre 3 : " + "vous ferez "+ days + " jour(s) et  vous paierez " + aPayer + '$';
 }
 
 function calculSejour4(){
 
     document.querySelector(".btnReserver4").innerText = "Occupée";
-    document.querySelector("#btnAnnuler4").style.display = "none";
     document.querySelector("#btnValider4").style.display = "none";
 
     var d1 = document.getElementById("dated4").value;
@@ -99,7 +91,7 @@ function calculSejour4(){
     const time = Math.abs(dateTwo - dateOne);
     const days = Math.ceil(time/ (1000 * 60 * 60 * 24));
     var aPayer = 20 * days;
-    document.getElementById("output4").innerHTML = "vous ferez "+ days + " jour(s) \n et  vous paierez " + aPayer + '$';
+    document.getElementById('AreaNairobi').value="chambre 4 : " + "vous ferez "+ days + " jour(s) et  vous paierez " + aPayer + '$';
 }
 // fin des boutons de calculSejour nairobi
 
@@ -138,7 +130,6 @@ function reservation8(){
 function calculSejour5(){
 
     document.querySelector(".btnReserver5").innerText = "Occupée";
-    document.querySelector("#btnAnnuler5").style.display = "none";
     document.querySelector("#btnValider5").style.display = "none";
 
     var d1 = document.getElementById("dated5").value;
@@ -148,13 +139,12 @@ function calculSejour5(){
     const time = Math.abs(dateTwo - dateOne);
     const days = Math.ceil(time/ (1000 * 60 * 60 * 24));
     var aPayer = 10 * days;
-    document.getElementById("output5").innerHTML = "vous ferez "+ days + " jour(s) \n et  vous paierez " + aPayer + '$';
+    document.getElementById('AreaKinshasa').value="chambre 5 : " + "vous ferez "+ days + " jour(s) et  vous paierez " + aPayer + '$';
 }
 
 function calculSejour6(){
 
     document.querySelector(".btnReserver6").innerText = "Occupée";
-    document.querySelector("#btnAnnuler6").style.display = "none";
     document.querySelector("#btnValider6").style.display = "none";
 
     var d1 = document.getElementById("dated6").value;
@@ -164,13 +154,12 @@ function calculSejour6(){
     const time = Math.abs(dateTwo - dateOne);
     const days = Math.ceil(time/ (1000 * 60 * 60 * 24));
     var aPayer = 10 * days;
-    document.getElementById("output6").innerHTML = "vous ferez "+ days + " jour(s) \n et  vous paierez " + aPayer + '$';
+    document.getElementById('AreaKinshasa').value="chambre 6 : " + "vous ferez "+ days + " jour(s) et  vous paierez " + aPayer + '$';
 }
 
 function calculSejour7(){
 
     document.querySelector(".btnReserver7").innerText = "Occupée";
-    document.querySelector("#btnAnnuler7").style.display = "none";
     document.querySelector("#btnValider7").style.display = "none";
 
     var d1 = document.getElementById("dated7").value;
@@ -180,13 +169,12 @@ function calculSejour7(){
     const time = Math.abs(dateTwo - dateOne);
     const days = Math.ceil(time/ (1000 * 60 * 60 * 24));
     var aPayer = 10 * days;
-    document.getElementById("output7").innerHTML = "vous ferez "+ days + " jour(s) \n et  vous paierez " + aPayer + '$';
+    document.getElementById('AreaKinshasa').value="chambre 7 : " + "vous ferez "+ days + " jour(s) et  vous paierez " + aPayer + '$';
 }
 
 function calculSejour8(){
 
     document.querySelector(".btnReserver8").innerText = "Occupée";
-    document.querySelector("#btnAnnuler8").style.display = "none";
     document.querySelector("#btnValider8").style.display = "none";
 
     var d1 = document.getElementById("dated8").value;
@@ -196,58 +184,59 @@ function calculSejour8(){
     const time = Math.abs(dateTwo - dateOne);
     const days = Math.ceil(time/ (1000 * 60 * 60 * 24));
     var aPayer = 10 * days;
-    document.getElementById("output8").innerHTML = "vous ferez "+ days + " jour(s) \n et  vous paierez " + aPayer + '$';
+    document.getElementById('AreaKinshasa').value="chambre 8 : " + "vous ferez "+ days + " jour(s) et  vous paierez " + aPayer + '$';
 }
 // fin des boutons de calculSejour nairobi
 
 
 
 
-// btn annuler
+// btn annuler pour toutes les chambres Nairobi et kinshasa
 
-/*
-const commands = []
-const input = document.querySelector('#dated1')
-
-function saveCommand(e) {
-  commands.push({
-    // the action is also saved for implementing redo, which
-    // is not implemented in this example.
-    action: { type: 'add', key: e.key, index: dated1.selectionStart },
-    inverse: { type: 'remove', index: dated1.selectionStart }
-  })
+function annuler1(){
+  document.getElementById('AreaNairobi').value =" ";
+  document.querySelector(".btnReserver1").innerText = 'Réservez';
+  document.querySelector('.btnReserver1').setAttribute("enabled", "enabled");
+}
+function annuler2(){
+  document.getElementById('AreaNairobi').value =" ";
+  document.querySelector(".btnReserver2").innerText = 'Réservez';
+  document.querySelector('.btnReserver2').setAttribute("enabled", "enabled");
+}
+function annuler3(){
+  document.getElementById('AreaNairobi').value =" ";
+  document.querySelector(".btnReserver3").innerText = 'Réservez';
+  document.querySelector('.btnReserver3').setAttribute("enabled", "enabled");
+}
+function annuler4(){
+  document.getElementById('AreaNairobi').value =" ";
+  document.querySelector(".btnReserver4").innerText = 'Réservez';
+  document.querySelector('.btnReserver4').setAttribute("enabled", "enabled");
+}
+function annuler5(){
+  document.getElementById('AreaKinshasa').value =" ";
+  document.querySelector(".btnReserver5").innerText = 'Réservez';
+  document.querySelector('.btnReserver5').setAttribute("enabled", "enabled");
+}
+function annuler6(){
+  document.getElementById('AreaKinshasa').value =" ";
+  document.querySelector(".btnReserver6").innerText = 'Réservez';
+  document.querySelector('.btnReserver6').setAttribute("enabled", "enabled");
+}
+function annuler7(){
+  document.getElementById('AreaKinshasa').value =" ";
+  document.querySelector(".btnReserver7").innerText = 'Réservez';
+  document.querySelector('.btnReserver7').setAttribute("enabled", "enabled");
+}
+function annuler8(){
+  document.getElementById('AreaKinshasa').value =" ";
+  document.querySelector(".btnReserver8").innerText = 'Réservez';
+  document.querySelector('.btnReserver8').setAttribute("enabled", "enabled");
 }
 
-function undo() {
-  let value = input.value.split('')
-  const lastCommand = commands.pop()
- 
-  if (!lastCommand) return
-    
-  switch (lastCommand.inverse.type) {
-    case 'remove':
-      value.splice(lastCommand.inverse.index, 1)
-      break;      
-  }
-  
-  input.value = value.join('')
-}
-  
+// btn annuler pour toutes les chambres Nairobi et kinshasa
 
 
-let inpute = document.querySelector(".input");
-let buttone = document.querySelector(".button");
-button.disabled = true;
-input.addEventListener("change", stateHandle);
-function stateHandle() {
-  if (document.querySelector(".input").value === " ") {
-    button.disabled = true; 
-  } else {
-    button.disabled = false;
-  }
-}
-
-*/
 function reservAutre(){
   document.querySelector("#btn-autres").style.display = "inline-block";
   document.querySelector("#btn-autres-clear").style.display = "inline-bloc";
@@ -280,9 +269,43 @@ const clicquer = () =>{
 
 
 
+// how to save datas in a simple file.txt
 
-const clear = () =>{
-  localStorage.clear();
-  //document.location.reload();
+function saveDynamicDataToFile() {
 
+  var userInput = document.getElementById("myText").value;
+
+  var blob = new Blob([userInput], { type: "text/plain;charset=utf-8" });
+  saveAs(blob, "s.txt");
 }
+
+//boutons pour enregistrer mes donnees dans un fichier .txt
+
+
+
+function Enregistrer() {
+  var user = document.getElementById('AreaNairobi').value;
+  if(user != ""){
+    var blob = new Blob([user], { type: "text/plain;charset=utf-8" });
+    saveAs(blob, "nairobi.txt");
+  }
+  else if(user == ""){
+    
+    alert("Veuillez faire une reservation");
+  }
+}
+
+function Enregistrer1() {
+  var user = document.getElementById('AreaKinshasa').value;
+  if(user != ""){
+    var blob = new Blob([user], { type: "text/plain;charset=utf-8" });
+    saveAs(blob, "kinshasa.txt");
+  }
+  else if(user == ""){
+    
+    alert("Veuillez faire une reservation");
+  }
+}
+
+
+
