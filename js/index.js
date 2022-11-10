@@ -33,10 +33,11 @@ function reservation4 (){
 
 function calculSejour1(){
 
-    document.querySelector(".btnReserver1").innerText = "Occupée";
+    
     document.querySelector("#btnValider1").style.display = "none";
-    document.querySelector('.btnReserver1').setAttribute("disabled", "");
+    // document.querySelector('.btnReserver1').setAttribute("disabled", "");
 
+    var n1 = document.getElementById("noun1").value;
     var d1 = document.getElementById("dated1").value;
     var d2 = document.getElementById("datef1").value;
     const dateOne = new Date(d1);
@@ -44,14 +45,26 @@ function calculSejour1(){
     const time = Math.abs(dateTwo - dateOne);
     const days = Math.ceil(time/ (1000 * 60 * 60 * 24));
     var aPayer = 20 * days;
-    document.getElementById('AreaNairobi').value="chambre 1 : " + "vous ferez "+ days + " jour(s) et  vous paierez " + aPayer + '$';
+    if( n1 == ""){
+      alert('Veuillez entrer votre nom');
+    }
+    else if(d1 == '' || d2 == ''){
+      alert("Veuillez compléter toutes les cases ");  
+      document.querySelector(".btnReserver1").innerText = "Réserver";      
+    }
+    else{
+        document.getElementById('AreaNairobi').value="Numéro de chambre : 1  \n" + "Nom : " + n1 + " \nDurée de séjour : "+ days +" jours" + " \nMontant à payer : " + aPayer + '$';
+        document.querySelector(".btnReserver1").style.display = "none";
+        document.querySelector('#occuped1').innerText="chambre 1 Occupée";
+      }
 }
 
 function calculSejour2(){
 
-    document.querySelector(".btnReserver2").innerText = "Occupée";
+    
     document.querySelector("#btnValider2").style.display = "none";
 
+    var n1 = document.getElementById("noun2").value;
     var d1 = document.getElementById("dated2").value;
     var d2 = document.getElementById("datef2").value;
     const dateOne = new Date(d1);
@@ -59,16 +72,28 @@ function calculSejour2(){
     const time = Math.abs(dateTwo - dateOne);
     const days = Math.ceil(time/ (1000 * 60 * 60 * 24));
     var aPayer = 20 * days;
-    document.getElementById('AreaNairobi').value="chambre 2 : " + "vous ferez "+ days + " jour(s) et  vous paierez " + aPayer + '$';
-
+    if( n1 == ""){
+      alert('Veuillez entrer votre nom');
+      document.querySelector(".btnReserver2").innerText = "Réserver";
+    }
+    else if(d1 == '' || d2 == ''){
+      alert("Veuillez compléter toutes les cases ");
+      document.querySelector(".btnReserver2").innerText = "Réserver";        
+    }
+    else{ 
+      document.getElementById('AreaNairobi').value="Numéro de chambre : 2  \n" + "Nom : " + n1 + " \nDurée de séjour : "+ days +" jours" + " \nMontant à payer : " + aPayer + '$';
+      document.querySelector(".btnReserver2").style.display = "none";
+      document.querySelector('#occuped2').innerText="chambre 2 Occupée";
+    }
     //document.getElementById('AreaNairobi').push();
   }
 
 function calculSejour3(){
 
-    document.querySelector(".btnReserver3").innerText = "Occupée";
+    
     document.querySelector("#btnValider3").style.display = "none";
 
+    var n1 = document.getElementById("noun3").value;
     var d1 = document.getElementById("dated3").value;
     var d2 = document.getElementById("datef3").value;
     const dateOne = new Date(d1);
@@ -76,14 +101,25 @@ function calculSejour3(){
     const time = Math.abs(dateTwo - dateOne);
     const days = Math.ceil(time/ (1000 * 60 * 60 * 24));
     var aPayer = 20 * days;
-    document.getElementById('AreaNairobi').value="chambre 3 : " + "vous ferez "+ days + " jour(s) et  vous paierez " + aPayer + '$';
-}
+    if( n1 == ""){
+      alert('Veuillez entrer votre nom');
+      document.querySelector(".btnReserver3").innerText = 'Réserver'; 
+    }
+    else if(d1 == '' || d2 == ''){
+      alert("Veuillez compléter toutes les cases ");
+      document.querySelector(".btnReserver3").innerText = 'Réserver';         
+    }
+    else{ 
+      document.getElementById('AreaNairobi').value="Numéro de chambre : 2  \n" + "Nom : " + n1 + " \nDurée de séjour : "+ days +" jours" + " \nMontant à payer : " + aPayer + '$';
+      document.querySelector(".btnReserver3").style.display = "none";
+      document.querySelector('#occuped3').innerText="chambre 3 Occupée";
+    }}
 
 function calculSejour4(){
 
-    document.querySelector(".btnReserver4").innerText = "Occupée";
     document.querySelector("#btnValider4").style.display = "none";
 
+    var n1 = document.getElementById("noun4").value;
     var d1 = document.getElementById("dated4").value;
     var d2 = document.getElementById("datef4").value;
     const dateOne = new Date(d1);
@@ -91,8 +127,19 @@ function calculSejour4(){
     const time = Math.abs(dateTwo - dateOne);
     const days = Math.ceil(time/ (1000 * 60 * 60 * 24));
     var aPayer = 20 * days;
-    document.getElementById('AreaNairobi').value="chambre 4 : " + "vous ferez "+ days + " jour(s) et  vous paierez " + aPayer + '$';
-}
+    if( n1 == ""){
+      alert('Veuillez entrer votre nom');
+      document.querySelector(".btnReserver4").innerText = 'Réserver'; 
+    }
+    else if(d1 == '' || d2 == ''){
+      alert("Veuillez compléter toutes les cases ");
+      document.querySelector(".btnReserver4").innerText = 'Réserver';         
+    }
+    else{ 
+      document.getElementById('AreaNairobi').value="Numéro de chambre : 2  \n" + "Nom : " + n1 + " \nDurée de séjour : "+ days +" jours" + " \nMontant à payer : " + aPayer + '$';
+      document.querySelector(".btnReserver4").style.display = "none";
+      document.querySelector('#occuped4').innerText="chambre 4 Occupée";
+    }}
 // fin des boutons de calculSejour nairobi
 
 
@@ -129,9 +176,9 @@ function reservation8(){
 
 function calculSejour5(){
 
-    document.querySelector(".btnReserver5").innerText = "Occupée";
     document.querySelector("#btnValider5").style.display = "none";
 
+    var n1 = document.getElementById("noun5").value;
     var d1 = document.getElementById("dated5").value;
     var d2 = document.getElementById("datef5").value;
     const dateOne = new Date(d1);
@@ -139,14 +186,25 @@ function calculSejour5(){
     const time = Math.abs(dateTwo - dateOne);
     const days = Math.ceil(time/ (1000 * 60 * 60 * 24));
     var aPayer = 10 * days;
-    document.getElementById('AreaKinshasa').value="chambre 5 : " + "vous ferez "+ days + " jour(s) et  vous paierez " + aPayer + '$';
-}
+    if( n1 == ""){
+      alert('Veuillez entrer votre nom');
+      document.querySelector(".btnReserver5").innerText = 'Réserver'; 
+    }
+    else if(d1 == '' || d2 == ''){
+      alert("Veuillez compléter toutes les cases ");
+      document.querySelector(".btnReserver5").innerText = 'Réserver';         
+    }
+    else{ 
+      document.getElementById('AreaKinshasa').value="Numéro de chambre : 5  \n" + "Nom : " + n1 + " \nDurée de séjour : "+ days +" jours" + " \nMontant à payer : " + aPayer + '$';
+      document.querySelector(".btnReserver5").style.display = "none";
+      document.querySelector('#occuped5').innerText="chambre 5 Occupée";
+    }}
 
 function calculSejour6(){
 
-    document.querySelector(".btnReserver6").innerText = "Occupée";
     document.querySelector("#btnValider6").style.display = "none";
 
+    var n1 = document.getElementById("noun6").value;
     var d1 = document.getElementById("dated6").value;
     var d2 = document.getElementById("datef6").value;
     const dateOne = new Date(d1);
@@ -154,14 +212,25 @@ function calculSejour6(){
     const time = Math.abs(dateTwo - dateOne);
     const days = Math.ceil(time/ (1000 * 60 * 60 * 24));
     var aPayer = 10 * days;
-    document.getElementById('AreaKinshasa').value="chambre 6 : " + "vous ferez "+ days + " jour(s) et  vous paierez " + aPayer + '$';
-}
+    if( n1 == ""){
+      alert('Veuillez entrer votre nom');
+      document.querySelector(".btnReserver6").innerText = 'Réserver'; 
+    }
+    else if(d1 == '' || d2 == ''){
+      alert("Veuillez compléter toutes les cases ");
+      document.querySelector(".btnReserver6").innerText = 'Réserver';         
+    }
+    else{ 
+      document.getElementById('AreaKinshasa').value="Numéro de chambre : 6  \n" + "Nom : " + n1 + " \nDurée de séjour : "+ days +" jours" + " \nMontant à payer : " + aPayer + '$';
+      document.querySelector(".btnReserver6").style.display = "none";
+      document.querySelector('#occuped6').innerText="chambre 6 Occupée";
+    }}
 
 function calculSejour7(){
 
-    document.querySelector(".btnReserver7").innerText = "Occupée";
     document.querySelector("#btnValider7").style.display = "none";
 
+    var n1 = document.getElementById("noun7").value;
     var d1 = document.getElementById("dated7").value;
     var d2 = document.getElementById("datef7").value;
     const dateOne = new Date(d1);
@@ -169,14 +238,25 @@ function calculSejour7(){
     const time = Math.abs(dateTwo - dateOne);
     const days = Math.ceil(time/ (1000 * 60 * 60 * 24));
     var aPayer = 10 * days;
-    document.getElementById('AreaKinshasa').value="chambre 7 : " + "vous ferez "+ days + " jour(s) et  vous paierez " + aPayer + '$';
-}
+    if( n1 == ""){
+      alert('Veuillez entrer votre nom');
+      document.querySelector(".btnReserver7").innerText = 'Réserver'; 
+    }
+    else if(d1 == '' || d2 == ''){
+      alert("Veuillez compléter toutes les cases ");
+      document.querySelector(".btnReserver7").innerText = 'Réserver';         
+    }
+    else{ 
+      document.getElementById('AreaKinshasa').value="Numéro de chambre : 7  \n" + "Nom : " + n1 + " \nDurée de séjour : "+ days +" jours" + " \nMontant à payer : " + aPayer + '$';
+      document.querySelector(".btnReserver7").style.display = "none";
+      document.querySelector('#occuped7').innerText="chambre 7 Occupée";
+    }}
 
 function calculSejour8(){
 
-    document.querySelector(".btnReserver8").innerText = "Occupée";
     document.querySelector("#btnValider8").style.display = "none";
 
+    var n1 = document.getElementById("noun8").value;
     var d1 = document.getElementById("dated8").value;
     var d2 = document.getElementById("datef8").value;
     const dateOne = new Date(d1);
@@ -184,8 +264,19 @@ function calculSejour8(){
     const time = Math.abs(dateTwo - dateOne);
     const days = Math.ceil(time/ (1000 * 60 * 60 * 24));
     var aPayer = 10 * days;
-    document.getElementById('AreaKinshasa').value="chambre 8 : " + "vous ferez "+ days + " jour(s) et  vous paierez " + aPayer + '$';
-}
+    if( n1 == ""){
+      alert('Veuillez entrer votre nom');
+      document.querySelector(".btnReserver8").innerText = 'Réserver'; 
+    }
+    else if(d1 == '' || d2 == ''){
+      alert("Veuillez compléter toutes les cases ");
+      document.querySelector(".btnReserver8").innerText = 'Réserver';         
+    }
+    else{ 
+      document.getElementById('AreaNairobi').value="Numéro de chambre : 8  \n" + "Nom : " + n1 + " \nDurée de séjour : "+ days +" jours" + " \nMontant à payer : " + aPayer + '$';
+      document.querySelector(".btnReserver8").style.display = "none";
+      document.querySelector('#occuped8').innerText="chambre 8 Occupée";
+    }}
 // fin des boutons de calculSejour nairobi
 
 
@@ -196,45 +287,86 @@ function calculSejour8(){
 function annuler1(){
   document.getElementById('AreaNairobi').value =" ";
   document.querySelector(".btnReserver1").innerText = 'Réservez';
-  document.querySelector('.btnReserver1').setAttribute("enabled", "enabled");
+  document.querySelector('#occuped1').innerText="chambre 1";
+  document.querySelector(".btnReserver1").style.display="block";
+  document.querySelector('#noun1').value = '';
+  document.querySelector('#dated1').value = '';
+  document.querySelector('#datef1').value = '';
 }
 function annuler2(){
   document.getElementById('AreaNairobi').value =" ";
   document.querySelector(".btnReserver2").innerText = 'Réservez';
-  document.querySelector('.btnReserver2').setAttribute("enabled", "enabled");
+  document.querySelector('#occuped2').innerText="chambre 2";
+  document.querySelector(".btnReserver2").style.display="block";
+  document.querySelector('#noun2').value = '';
+  document.querySelector('#dated2').value = '';
+  document.querySelector('#datef2').value = '';
 }
 function annuler3(){
   document.getElementById('AreaNairobi').value =" ";
   document.querySelector(".btnReserver3").innerText = 'Réservez';
-  document.querySelector('.btnReserver3').setAttribute("enabled", "enabled");
+  document.querySelector('#occuped3').innerText="chambre 3";
+  document.querySelector(".btnReserver3").style.display="block";
+  document.querySelector('#noun3').value = '';
+  document.querySelector('#dated3').value = '';
+  document.querySelector('#datef3').value = '';
 }
 function annuler4(){
   document.getElementById('AreaNairobi').value =" ";
   document.querySelector(".btnReserver4").innerText = 'Réservez';
-  document.querySelector('.btnReserver4').setAttribute("enabled", "enabled");
+  document.querySelector('#occuped4').innerText="chambre 4";
+  document.querySelector(".btnReserver4").style.display="block";
+  document.querySelector('#noun4').value = '';
+  document.querySelector('#dated4').value = '';
+  document.querySelector('#datef4').value = '';
 }
 function annuler5(){
   document.getElementById('AreaKinshasa').value =" ";
   document.querySelector(".btnReserver5").innerText = 'Réservez';
-  document.querySelector('.btnReserver5').setAttribute("enabled", "enabled");
+  document.querySelector('#occuped5').innerText="chambre 5";
+  document.querySelector(".btnReserver5").style.display="block";
+  document.querySelector('#noun5').value = '';
+  document.querySelector('#dated5').value = '';
+  document.querySelector('#datef5').value = '';
 }
 function annuler6(){
   document.getElementById('AreaKinshasa').value =" ";
   document.querySelector(".btnReserver6").innerText = 'Réservez';
-  document.querySelector('.btnReserver6').setAttribute("enabled", "enabled");
+  document.querySelector('#occuped6').innerText="chambre 6";
+  document.querySelector(".btnReserver6").style.display="block";
+  document.querySelector('#noun6').value = '';
+  document.querySelector('#dated6').value = '';
+  document.querySelector('#datef6').value = '';
 }
 function annuler7(){
   document.getElementById('AreaKinshasa').value =" ";
   document.querySelector(".btnReserver7").innerText = 'Réservez';
-  document.querySelector('.btnReserver7').setAttribute("enabled", "enabled");
+  document.querySelector('#occuped7').innerText="chambre 7";
+  document.querySelector(".btnReserver7").style.display="block";
+  document.querySelector('#noun7').value = '';
+  document.querySelector('#dated7').value = '';
+  document.querySelector('#datef7').value = '';
 }
 function annuler8(){
   document.getElementById('AreaKinshasa').value =" ";
   document.querySelector(".btnReserver8").innerText = 'Réservez';
-  document.querySelector('.btnReserver8').setAttribute("enabled", "enabled");
+  document.querySelector('#occuped8').innerText="chambre 8";
+  document.querySelector(".btnReserver8").style.display="block";
+  document.querySelector('#noun8').value = '';
+  document.querySelector('#dated8').value = '';
+  document.querySelector('#datef8').value = '';
 }
 
-// btn annuler pour toutes les chambres Nairobi et kinshasa
+// fin des btn annuler pour toutes les chambres Nairobi et kinshasa
+
+//btn annuler pour tout les autres chambres
+
+const Annuler = () =>{
+  document.querySelector('#nom').value = '';
+  document.querySelector('#date_arriver').value = '';
+  document.querySelector('#date_depart').value = '';
+  document.querySelector('#Chambre').value = '';
+}
 
 
 function reservAutre(){
@@ -261,10 +393,33 @@ const clicquer = () =>{
     const time = Math.abs(dateTwo - dateOne);
     const days = Math.ceil(time/ (1000 * 60 * 60 * 24));
     var aPayer = nbreChambre * 7 * days;
-    document.querySelector(".slides-div").style.display="none";
-    //document.querySelector("#slide_1").innerHTML = "Occupée par " + nom.value + " qui fera " + days + " jours \n , il paiera " + aPayer + "$" ;
+    document.querySelector(".slides-div").innerHTML="occuped";
     alert(" chambre occupée par " + nom.value + " qui fera " + days + " jours \n , il paiera " + aPayer + "$" )
     document.querySelector("#btn-autres").style.display = "none";
+}
+
+function clicquer1(){
+  const client1 = {
+    nom:nom.value,
+    date_arriver:date_arriver.value,
+    date_depart:date_depart.value,
+    Chambre:Chambre.value
+  }
+
+    var d1 = document.getElementById("date_arriver").value;
+    var d2 = document.getElementById("date_depart").value;
+    var nbreChambre = document.getElementById("Chambre").value;
+    const dateOne = new Date(d1);
+    const dateTwo = new Date(d2);
+    const time = Math.abs(dateTwo - dateOne);
+    const days = Math.ceil(time/ (1000 * 60 * 60 * 24));
+    var aPayer = nbreChambre * 7 * days;
+    document.querySelector(".slides-div").innerHTML="occuped";
+    alert(" chambre occupée par " + nom.value + " qui fera " + days + " jours \n , il paiera " + aPayer + "$" )
+    document.querySelector("#btn-autres").style.display = "none";
+
+  var blob = new Blob([client1], { type: "text/plain;charset=utf-8"});
+  saveAs(blob.setItem("nom",JSON.stringify(client)), "autres.txt");
 }
 
 

@@ -20,8 +20,8 @@ header{
 
 /*debut du slider*/
  .slide-container{
-   top: 330px;
-   left: -55px;
+   top: -50px;
+   left: -10px;
    width: 100%;
    height: 45vh;
    display: flex;
@@ -40,7 +40,7 @@ header{
    justify-content: center;
    align-items: center;
    transition: .7s;
-   top: 40px;
+   top: -30px;
 }
 .slides-div{
    display: flex;
@@ -116,3 +116,86 @@ header{
 #slider-span5:target ~ .image_slider {left: -2%;}
 
 /*fin du slider*/
+
+.menu_container{
+   display: flex;
+   justify-content: center;
+   position: relative;
+   align-items: center;
+   width: 80%;
+   height: 100vh;
+   /* border: 1px solid black; */
+   left: 10%;
+   top: 100px;
+}
+.dejeuner{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   left: 20px;
+   margin: auto;
+   width: 350px;
+   height: 600px;
+   /* border: 1px solid black; */
+   border-radius: 6px 6px 6px 6px;
+   box-shadow: 1px 1px 1px 1px rgb(219, 212, 212);
+}
+.dejeuner:hover{
+   border-radius: 6px 6px 6px 6px;
+   box-shadow: 2px 2px 2px 2px rgb(212, 210, 210);
+   border: 10px solid rgb(245, 242, 242);
+}
+.titre{
+   position: absolute;
+   margin-top: -560px;
+   font-size: 40px;
+   font-weight: lighter;
+   border-bottom: 1px solid rgb(197, 200, 201);
+   text-shadow: 1px 1px 1px rgb(197, 189, 189);
+   color: black;
+   letter-spacing: 6px;
+}
+.menu{
+   position: absolute;
+   margin-top: -450px;
+   font-size: 25px;
+   font-weight: lighter;
+   text-shadow: 1px 1px 1px rgb(197, 189, 189);
+   color: black;
+   letter-spacing: 1px;
+}
+
+.cochable{
+   margin-left: -30px;
+   margin-top: 5px;
+   width: 60px;
+   height: 20px;
+}
+.bouffe{
+   margin-top: -200px;
+}
+.form1{
+   margin-top: 140px;
+   height: 100px;
+}
+.formulaire{
+   margin-top: 100px;
+}
+.formulaire1{
+   margin-top: 46px;
+   margin-left: 80px;
+}
+.formulaire2{
+   margin-top: 46px;
+   margin-left: 80px;
+}
+.icon{
+   width: 110px;
+   height: 110px;
+   position: absolute;
+   top: 75vh;
+   
+}
+
+
+

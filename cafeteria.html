@@ -19,7 +19,7 @@
                 </a>
                 
             </div>
-            <div class="btn-connexion1">
+            <div class="btn-connexion1"  id="ancreHaut">
                 <a href="#">Se connecter</a>
             </div>
             <div class="btn-inscription1">
@@ -48,7 +48,13 @@
             <h1>Cafeteria</h1>
         </div>
 
-<!-- debut du slider -->
+         
+    </header>
+        <div class="pub">
+            <h1>Une cafeteria à la disposition de tous avec trois repas bien équilibrés</h1> 
+        </div>
+
+        <!-- debut du slider -->
         <div class="slide-container">
             <span class="slider-span" id="slider-span1"></span>
             <span class="slider-span" id="slider-span2"></span>
@@ -79,20 +85,95 @@
                 </div>
             </div>
         </div>
-        <!-- fin du slider -->
-         
-    </header>
-        <div class="pub">
-            <h1>Une cafeteria à la disposition de tous avec trois repas bien équilibrés</h1> 
-        </div>
+        <section class="menu_container">
+            <div class="dejeuner" id="petit_dejeuner">
+                <span class="titre">Petit déjeuner</span>
+                <span class="menu">au menu</span>
+                <div class="form1">
+                    <form action="" class="bouffe">
+                    <input type="checKbox" class="cochable">Thé + Pain + Oeufs<br>
+                        <input type="checKbox" class="cochable">Lait + Pain + Oeufs <br>
+                        <input type="checKbox" class="cochable">Lait + Pain <br>
+                        <input type="checKbox" class="cochable">Thé + Pain <br> 
+                    </form>
 
-        <aside>
+                    <form action="" class="formulaire">
+                        <input type="text" id="nameClient" placeholder="nom" style="height: 5vh; width: 144px; border: none; background: rgb(189, 220, 228);"><br>
+                        <input type="date" id="dateReservation" style="margin-top: 5px;width: 144px; height: 5vh; border: none; background: rgb(189, 220, 228);"><br>
+                        <button id="btnValider1"  style="margin-top: 5px; width: 70px; height: 5vh; border: none; ">Valider</button>
+                        <button id="btnAnnuler1" style="margin-top: 5px; width: 70px; height: 5vh; border: none;" >Annuler</button>
+                    </form>
+                </div>
+
+
+                <div class="icon">
+                    <img src="icôns/petit-dejeuner.png"  width="100%" height="100%">
+                </div>
+
+            </div>
+            <div class="dejeuner" id="dej">
+                <span class="titre">Déjeuner</span>
+                <span class="menu">au menu</span>
+                <div class="form1">
+                   <form action="" class="bouffe">
+                        <input type="checKbox" class="cochable">Riz + Haricots + Choux + fruits<br>
+                        <input type="checKbox" class="cochable">Plantains + Haricots + Choux + fruits<br>
+                        <input type="checKbox" class="cochable">Pommes de terre + Haricots + Choux + fruits<br>
+                        <input type="checKbox" class="cochable">Pommes de terre + Haricots blanc + Choux <br> 
+                        <input type="checKbox" class="cochable">Plantains + Haricots blanc + Choux <br> 
+                        <input type="checKbox" class="cochable">Riz+ Haricots blanc + Choux <br> 
+                    </form> 
+                    <form action="" class="formulaire1">
+                        <input type="text" id="nameClient" placeholder="nom" style="height: 5vh;  width: 144px; border: none; background: rgb(189, 220, 228);"><br>
+                        <input type="date" id="dateReservation" style="margin-top: 5px; width: 144px; height: 5vh; border: none; background: rgb(189, 220, 228);"><br>
+                        <button id="btnValider1"  style="margin-top: 5px; width: 70px; height: 5vh; border: none;">Valider</button>
+                        <button id="btnAnnuler1" style="margin-top: 5px; width: 70px; height: 5vh; border: none;" >Annuler</button>
+                    </form>
+                </div>
+                <div class="icon">
+                    <img src="icôns/dejeuner.png"  width="100%" height="100%">
+                </div>
+                
+            </div>
+            <div class="dejeuner" id="souper">
+                <span class="titre">Souper</span>
+                <span class="menu">au menu</span>
+                <div class="form1">
+                   <form action="" class="bouffe">
+                        <input type="checKbox" class="cochable">Pâte + Sombé + Choux-fleurs + Arachides<br>
+                        <input type="checKbox" class="cochable">Pâte + Autres légumes + Choux-fleurs<br>
+                        <input type="checKbox" class="cochable">Fritte + Mayonnaise + oeufs + pain<br>
+                        <input type="checKbox" class="cochable">Pâte + Autres légumes + Aubérgines <br> 
+                        <input type="checKbox" class="cochable">Plantains + Haricots blanc + Choux <br> 
+                        <input type="checKbox" class="cochable">Riz+ Sombé + Choux-fleurs + Sombé<br> 
+                    </form> 
+                    <form action="" class="formulaire2">
+                        <input type="text" id="nameClient" placeholder="nom" style="height: 5vh;  width: 144px; border: none; background: rgb(189, 220, 228);"><br>
+                        <input type="date" id="dateReservation" style="margin-top: 5px; width: 144px; height: 5vh; border: none; background: rgb(189, 220, 228);"><br>
+                        <button id="btnValider1"  style="margin-top: 5px; width: 70px; height: 5vh; border: none;">Valider</button>
+                        <button id="btnAnnuler1" style="margin-top: 5px; width: 70px; height: 5vh; border: none;" >Annuler</button>
+                    </form>
+                </div>
+                <div class="icon">
+                    <img src="icôns/soupe.png"  width="100%" height="100%">
+                </div>
+            </div>
+        </section>
+
+        <textarea id="AreaCafeteria" rows="8" cols="30" style="margin: 140px 510px ;">
+   
+        </textarea>
+        <button  type="button" id="save" onclick="Enregistrer();" style="margin: 200px -505px ; position: absolute; width: 7vw; height: 5vh; border-radius: 15px 15px 15px 15px;">Enregistrer</button>
+        
+        <!-- fin du slider -->
+
+        <!-- <aside>
             <textarea id="myText" rows="4" cols="50">
                 We love to share our experiments, ideas, and knowledge with everyone by writing articles on the latest technology trends.
             </textarea>
                
             <button type="button" onclick="saveDynamicDataToFile();">Click to Save</button>
-        </aside>
+        </aside> -->
         
 
 
@@ -183,6 +264,9 @@
         </div>
         <div class="bas">
             <p>Copyright ©2022 All rights reserved </p>
+        </div>
+        <div>
+            <a href="#ancreHaut"><img src="icôns/cliquez-sur.png"  width="50px" height="60px" style="float: right;" alt=""></a>
         </div>
     </footer>
     

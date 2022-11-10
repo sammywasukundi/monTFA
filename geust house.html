@@ -21,7 +21,7 @@
                 </a>
                 
             </div>
-            <div class="btn-connexion1">
+            <div class="btn-connexion1"  id="ancreHaut">
                 <a href="#">Se connecter</a>
             </div>
             <div class="btn-inscription1">
@@ -69,56 +69,56 @@
             <button class="btnReserver1" onclick="reservation1()">Réservez</button>
             <img src="images/chambre1.jpg" alt="" width="100%" height="100%">
 
-            <h6>chambre 1</h6>
+            <h6 id="occuped1">chambre 1</h6>
         </div>
         <div class="chambre2">
             <button class="btnReserver2" onclick="reservation2()">Réservez</button>
             <img src="images/chambre2.jpg" alt="" width="100%" height="100%">
-            <h6>chambre 2</h6>
+            <h6 id="occuped2">chambre 2</h6>
         </div>
         <div class="chambre3">
             <button class="btnReserver3" onclick="reservation3()">Réservez</button>
             <img src="images/chambre3.jpg" alt="" width="100%" height="100%">
-            <h6>chambre 3</h6>
+            <h6 id="occuped3">chambre 3</h6>
         </div>
         <div class="chambre4">
             <button class="btnReserver4" onclick="reservation4()">Réservez</button>
             <img src="images/chambre4.jpg" alt="" width="100%" height="100%">
-            <h6>chambre 4</h6>
+            <h6 id="occuped4">chambre 4</h6>
         </div>
 
     </div>
 
     <div class="conteneur-calendrier-hover1">
-            <input type="date" id="dated1"><br><br>
-            <input type="date" id="datef1"  value="Entrez la date de départ">
+            <input type="text" id="noun1" placeholder="nom"><br>
+            <input type="date" id="dated1" style="margin-top: 5px;"><br>
+            <input type="date" id="datef1"  style="margin-top: 5px;">
             <button id="btnValider1"  onclick="calculSejour1()" >Valider</button>
             <button id="btnAnnuler1"  enabled=true onclick="annuler1()">Annuler</button>
-            <p id="output1"></p>
     </div>
 
     <div class="conteneur-calendrier-hover2">
-        <input type="date" id="dated2"><br><br>
-        <input type="date" id="datef2">
+        <input type="text" id="noun2" placeholder="nom"><br>
+        <input type="date" id="dated2" style="margin-top: 5px;"><br>
+        <input type="date" id="datef2" style="margin-top: 5px;">
         <button id="btnValider2"  onclick="calculSejour2()" >Valider</button>
         <button id="btnAnnuler2" onclick="annuler2()">Annuler</button>
-        <p id="output2"></p>
     </div>
 
     <div class="conteneur-calendrier-hover3">
-        <input type="date" id="dated3"><br><br>
-        <input type="date" id="datef3">
+        <input type="text" id="noun3" placeholder="nom"><br>
+        <input type="date" id="dated3" style="margin-top: 5px;"><br>
+        <input type="date" id="datef3" style="margin-top: 5px;">
         <button id="btnValider3"  onclick="calculSejour3()" >Valider</button>
         <button id="btnAnnuler3" onclick="annuler3()">Annuler</button>
-        <p id="output3"></p>
     </div>
 
     <div class="conteneur-calendrier-hover4">
-        <input type="date" id="dated4"><br><br>
-        <input type="date" id="datef4">
+        <input type="text" id="noun4" placeholder="nom"><br>
+        <input type="date" id="dated4" style="margin-top: 5px;"><br>
+        <input type="date" id="datef4" style="margin-top: 5px;">
         <button id="btnValider4"  onclick="calculSejour4()" >Valider</button>
         <button id="btnAnnuler4" onclick="annuler4()">Annuler</button>
-        <p id="output4"></p>
 </div>
 
     <textarea id="AreaNairobi" rows="4" cols="50">
@@ -143,56 +143,56 @@
         <div class="chambre5">
             <button class="btnReserver5" onclick="reservation5()">Réservez</button>
             <img src="images/chambre5.jpg" alt="" width="100%" height="100%">
-            <h6>chambre 1</h6>
+            <h6 id="occuped5">chambre 1</h6>
         </div>
         <div class="chambre6">
             <button class="btnReserver6" onclick="reservation6()">Réservez</button>
             <img src="images/chambre6.jpg" alt="" width="100%" height="100%">
-            <h6>chambre 2</h6>
+            <h6 id="occuped6">chambre 2</h6>
         </div>
         <div class="chambre7">
             <button class="btnReserver7" onclick="reservation7()">Réservez</button>
             <img src="images/chambre7.jpg" alt="" width="100%" height="100%">
-            <h6>chambre 3</h6>
+            <h6 id="occuped7">chambre 3</h6>
         </div>
         <div class="chambre8">
             <button class="btnReserver8" onclick="reservation8()">Réservez</button>
             <img src="images/chambre8.jpg" alt="" width="100%" height="100%">
-            <h6>chambre 4</h6>
+            <h6 id="occuped8">chambre 4</h6>
         </div>
 
     </div>
 
     <div class="conteneur-calendrier-hover5">
-            <input type="date" id="dated5"><br><br>
-            <input type="date" id="datef5">
+            <input type="text" id="noun5" placeholder="nom"><br>
+            <input type="date" id="dated5" style="margin-top: 5px;"><br>
+            <input type="date" id="datef5" style="margin-top: 5px;">
             <button id="btnValider5"  onclick="calculSejour5()" >Valider</button>
             <button id="btnAnnuler5" onclick="annuler5()">Annuler</button>
-            <p id="output5"></p>
     </div>
 
     <div class="conteneur-calendrier-hover6">
-        <input type="date" id="dated6"><br><br>
-        <input type="date" id="datef6">
+        <input type="text" id="noun5" placeholder="nom"><br>
+        <input type="date" id="dated6" style="margin-top: 5px;"><br>
+        <input type="date" id="datef6" style="margin-top: 5px;">
         <button id="btnValider6"  onclick="calculSejour6()" >Valider</button>
         <button id="btnAnnuler6" onclick="annuler6()">Annuler</button>
-        <p id="output6"></p>
     </div>
 
     <div class="conteneur-calendrier-hover7">
-        <input type="date" id="dated7"><br><br>
-        <input type="date" id="datef7">
+        <input type="text" id="noun7" placeholder="nom"><br>
+        <input type="date" id="dated7" style="margin-top: 5px;"><br>
+        <input type="date" id="datef7" style="margin-top: 5px;">
         <button id="btnValider7"  onclick="calculSejour7()" >Valider</button>
         <button id="btnAnnuler7" onclick="annuler7()">Annuler</button>
-        <p id="output7"></p>
     </div>
 
     <div class="conteneur-calendrier-hover8">
-        <input type="date" id="dated8"><br><br>
-        <input type="date" id="datef8">
+        <input type="text" id="noun8" placeholder="nom"><br>
+        <input type="date" id="dated8" style="margin-top: 5px;"><br>
+        <input type="date" id="datef8" style="margin-top: 5px;">
         <button id="btnValider8"  onclick="calculSejour8()" >Valider</button>
         <button id="btnAnnuler8" onclick="annuler8()">Annuler</button>
-        <p id="output8"></p>
     </div>
 
 
@@ -227,7 +227,7 @@ Autres chambres
                 <a href="#slider-span1" class="button" id="button-1"></a>
             </div>
             <div class="slides-div" id="slide-2" ondblclick="reservAutre()">
-                <img src="images/chambre2.jpg" alt="" class="img" id="img2">
+                <img src="images/chambre2.jpg" alt="" class="img" id="img2" >
                 <a href="#slider-span2" class="button" id="button-2"></a>
             </div>
             <div class="slides-div" id="slide-3" ondblclick="reservAutre()">
@@ -276,18 +276,36 @@ Autres chambres
             <input type="date" id="date_depart" class="inputClass"><br>
             <label for="Chambre" class="labelClass">Nombre des chambres</label>
             <input type="number" id="Chambre" class="inputClass" placeholder="Ex:10"><br>
-            <input type="submit" value="Reserver" id="btn-autres" class="inputClass" onclick="clicquer()"><br>
-            <input type="submit" value="Annuler" id="btn-autres-clear" class="inputClass" onclick="clear()">
+            <input type="submit" value="Reserver" id="btn-autres" class="inputClass" onclick="clicquer1()"><br>
+            <input type="submit" value="Annuler" id="btn-autres-clear" class="inputClass" onclick="Annuler()">
         </form>
         <div class="mesPng">
             <div class="png" id="png1">
                 <img src="icôns/maison-ecologique.png" alt="" id="imglogo">
+                
             </div>
-            <div class="png" id="png1">
-                <img src="icôns/femme-de-menage.png" alt="" id="imglogo">
+            <div class="png" id="png1" style="margin-top: -70px;">
+                <!-- <img src="icôns/femme-de-menage.png" alt="" id="imglogo"> -->
+                <h1 id="explication" style="font-size: 24px; font-weight: lighter; margin-top: -70px;">Validez les chambres ci-haut <br> par un double clic et remplissez <br> le formulaire juste à côté pour <br> la  réservation</h1>
+                <div class="doigtGauche">
+                    <img src="icôns/pointant-vers-la-gauche.png" width="160px" height="130px" style="margin-top: 70px; margin-left: 45px;" alt="">
+                </div>
             </div>
-            <div class="png" id="png1">
-                <img src="icôns/hotel.png" alt="" id="imglogo">
+            <div class="pngPub" id="png1">
+                <h1 id="explication" style="font-size: 24px; font-weight: lighter; margin-top: -70px;">Trouvez le meilleur d'hébergement au Guest house et<br> la bonne qualité de nourriture à notre cafetéria</h1>
+                
+                <div class="un">
+                    <img src="icôns/adresse-du-domicile.png" alt="" id="imglogo1">
+                </div>
+                <div class="un">
+                    <img src="icôns/servir.png" alt="" id="imglogo2">
+                </div>
+                <div class="un">
+                    <img src="icôns/restaurant.png" alt="" id="imglogo3">
+                </div>
+                <div class="un">
+                    <img src="icôns/se-laver-les-mains.png" alt="" id="imglogo4">
+                </div>
             </div>
         </div>
     </section>
@@ -324,7 +342,7 @@ Autres chambres
                 <div class="overlaycaf">
                     <div class="contentcaf">
                         <div class="btncaf">
-                            <a href="#">Voir plus</a>
+                            <a href="cafeteria.html">Voir plus</a>
                         </div>
                     </div>
                 </div>
@@ -381,6 +399,9 @@ Autres chambres
         </div>
         <div class="bas">
             <p>Copyright ©2022 All rights reserved </p>
+        </div>
+        <div>
+            <a href="#ancreHaut"><img src="icôns/cliquez-sur.png"  width="50px" height="60px" style="float: right;" alt=""></a>
         </div>
     </footer>
     
