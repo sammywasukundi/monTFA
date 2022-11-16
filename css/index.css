@@ -150,12 +150,45 @@ header{
 }
 .bienvenue h1{
     text-align: center;
-    color: rgb(255, 255, 255);
-    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    font-weight: lighter;
     font-size: 110px;
-    box-shadow: 1px 1px 1px 1px rgb(228, 230, 230);
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px rgb(219, 210, 210);
+    letter-spacing: 1px;
 }
+
+.btn_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 65%;
+    left: auto;
+ }
+ .btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+    padding:  20px 20px;
+    margin: 0 10px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    border-radius: 50px 50px 50px 50px;
+    border: none;
+    background: none;
+    color: rgb(255, 255, 255);
+    border: 3px solid ;
+ }
+ .btns:hover{
+    border: 5px solid rgb(255, 255, 255);
+    background-color: none;
+    color: rgb(255, 255, 255);
+ 
+ }
 /*............*/
 @media screen and (max-width: 1000px){
     header .menus{
@@ -214,6 +247,7 @@ header{
         margin-bottom: 20px;
     }
 }
+
 .guest{
     width: 95%;
     height: 40vh;

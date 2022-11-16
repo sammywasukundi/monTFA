@@ -53,7 +53,7 @@ function calculSejour1(){
       document.querySelector(".btnReserver1").innerText = "Réserver";      
     }
     else{
-        document.getElementById('AreaNairobi').value="Numéro de chambre : 1  \n" + "Nom : " + n1 + " \nDurée de séjour : "+ days +" jours" + " \nMontant à payer : " + aPayer + '$';
+        document.getElementById('AreaNairobi').value +="Numéro de chambre : 1  \n" + "Nom : " + n1 + " \nDurée de séjour : "+ days +" jours" + " \nMontant à payer : " + aPayer + '$\n' +'\n';
         document.querySelector(".btnReserver1").style.display = "none";
         document.querySelector('#occuped1').innerText="chambre 1 Occupée";
       }
@@ -81,7 +81,7 @@ function calculSejour2(){
       document.querySelector(".btnReserver2").innerText = "Réserver";        
     }
     else{ 
-      document.getElementById('AreaNairobi').value="Numéro de chambre : 2  \n" + "Nom : " + n1 + " \nDurée de séjour : "+ days +" jours" + " \nMontant à payer : " + aPayer + '$';
+      document.getElementById('AreaNairobi').value +="Numéro de chambre : 2  \n" + "Nom : " + n1 + " \nDurée de séjour : "+ days +" jours" + " \nMontant à payer : " + aPayer + '$\n' +'\n';
       document.querySelector(".btnReserver2").style.display = "none";
       document.querySelector('#occuped2').innerText="chambre 2 Occupée";
     }
@@ -110,7 +110,7 @@ function calculSejour3(){
       document.querySelector(".btnReserver3").innerText = 'Réserver';         
     }
     else{ 
-      document.getElementById('AreaNairobi').value="Numéro de chambre : 2  \n" + "Nom : " + n1 + " \nDurée de séjour : "+ days +" jours" + " \nMontant à payer : " + aPayer + '$';
+      document.getElementById('AreaNairobi').value +="Numéro de chambre : 3  \n" + "Nom : " + n1 + " \nDurée de séjour : "+ days +" jours" + " \nMontant à payer : " + aPayer + '$\n' +'\n';
       document.querySelector(".btnReserver3").style.display = "none";
       document.querySelector('#occuped3').innerText="chambre 3 Occupée";
     }}
@@ -136,7 +136,7 @@ function calculSejour4(){
       document.querySelector(".btnReserver4").innerText = 'Réserver';         
     }
     else{ 
-      document.getElementById('AreaNairobi').value="Numéro de chambre : 2  \n" + "Nom : " + n1 + " \nDurée de séjour : "+ days +" jours" + " \nMontant à payer : " + aPayer + '$';
+      document.getElementById('AreaNairobi').value +="Numéro de chambre : 2  \n" + "Nom : " + n1 + " \nDurée de séjour : "+ days +" jours" + " \nMontant à payer : " + aPayer + '$\n' +'\n';
       document.querySelector(".btnReserver4").style.display = "none";
       document.querySelector('#occuped4').innerText="chambre 4 Occupée";
     }}
@@ -195,7 +195,7 @@ function calculSejour5(){
       document.querySelector(".btnReserver5").innerText = 'Réserver';         
     }
     else{ 
-      document.getElementById('AreaKinshasa').value="Numéro de chambre : 5  \n" + "Nom : " + n1 + " \nDurée de séjour : "+ days +" jours" + " \nMontant à payer : " + aPayer + '$';
+      document.getElementById('AreaKinshasa').value +="Numéro de chambre : 5  \n" + "Nom : " + n1 + " \nDurée de séjour : "+ days +" jours" + " \nMontant à payer : " + aPayer + '$\n' +'\n';
       document.querySelector(".btnReserver5").style.display = "none";
       document.querySelector('#occuped5').innerText="chambre 5 Occupée";
     }}
@@ -221,7 +221,7 @@ function calculSejour6(){
       document.querySelector(".btnReserver6").innerText = 'Réserver';         
     }
     else{ 
-      document.getElementById('AreaKinshasa').value="Numéro de chambre : 6  \n" + "Nom : " + n1 + " \nDurée de séjour : "+ days +" jours" + " \nMontant à payer : " + aPayer + '$';
+      document.getElementById('AreaKinshasa').value +="Numéro de chambre : 6  \n" + "Nom : " + n1 + " \nDurée de séjour : "+ days +" jours" + " \nMontant à payer : " + aPayer + '$\n' +'\n';
       document.querySelector(".btnReserver6").style.display = "none";
       document.querySelector('#occuped6').innerText="chambre 6 Occupée";
     }}
@@ -247,7 +247,7 @@ function calculSejour7(){
       document.querySelector(".btnReserver7").innerText = 'Réserver';         
     }
     else{ 
-      document.getElementById('AreaKinshasa').value="Numéro de chambre : 7  \n" + "Nom : " + n1 + " \nDurée de séjour : "+ days +" jours" + " \nMontant à payer : " + aPayer + '$';
+      document.getElementById('AreaKinshasa').value +="Numéro de chambre : 7  \n" + "Nom : " + n1 + " \nDurée de séjour : "+ days +" jours" + " \nMontant à payer : " + aPayer + '$\n' +'\n';
       document.querySelector(".btnReserver7").style.display = "none";
       document.querySelector('#occuped7').innerText="chambre 7 Occupée";
     }}
@@ -273,7 +273,7 @@ function calculSejour8(){
       document.querySelector(".btnReserver8").innerText = 'Réserver';         
     }
     else{ 
-      document.getElementById('AreaNairobi').value="Numéro de chambre : 8  \n" + "Nom : " + n1 + " \nDurée de séjour : "+ days +" jours" + " \nMontant à payer : " + aPayer + '$';
+      document.getElementById('AreaNairobi').value +="Numéro de chambre : 8  \n" + "Nom : " + n1 + " \nDurée de séjour : "+ days +" jours" + " \nMontant à payer : " + aPayer + '$\n' +'\n';
       document.querySelector(".btnReserver8").style.display = "none";
       document.querySelector('#occuped8').innerText="chambre 8 Occupée";
     }}
@@ -462,5 +462,231 @@ function Enregistrer1() {
   }
 }
 
+
+// tout le javascript pour la cafeteria
+var data=[]
+const SaveCafeNourriture1 = () =>{
+
+    let n1 = document.getElementById("nameClient").value;
+    let d1 = document.getElementById("dateReservation").value;
+    let checkboxes = document.getElementsByName('ptit_dej');
+    for (let checkbox of checkboxes)
+      {    
+        if (checkbox.checked) {
+          document.body.append(checkbox.value + ' ,' );
+          data=checkbox.value
+        }
+
+      }
+      
+    if(document.getElementById('cochable1').checked === false)
+        alert('Veuillez cochez une ou plusieurs case(s) pour votre petit déjeuner ')
+    
+    // if(document.getElementsByName('ptit_dej').checked === false){
+    //   alert('Veuillez cochez une ou plusieurs case(s) pour votre petit déjeuner ')
+    // }
+    else if( n1 == ""){
+        alert('Veuillez entrer votre nom');
+    }
+    else if(d1 == ''){
+        alert("Veuillez compléter toutes les cases ");         
+    }
+    else{
+          document.querySelector('#AreaCafeteria').value += data + "\nCatégorie : Pétit déjeuner  \n" + "Nom : " + n1 + " \nDate de Réservation : " + " \nMontant à payer : " +  '$\n' +'\n';
+    }
+
+}
+
+const SaveCafeNourriture2 = () =>{
+
+    let n1 = document.getElementById("nameClient1").value;
+    let d1 = document.getElementById("dateReservation1").value;
+    let checkboxes = document.getElementsByName('dej');
+    for (let checkbox of checkboxes)
+      {    
+        if (checkbox.checked) {
+          document.body.append(checkbox.value + ' ,' );
+          data=checkbox.value
+        }
+
+      }
+      
+    if(document.getElementById('cochableDej1').checked === false)
+        alert('Veuillez cochez une ou plusieurs case(s) pour votre petit déjeuner ')
+    else if( n1 == " "){
+        alert('Veuillez entrer votre nom');
+    }
+    else if(d1 == ''){
+        alert("Veuillez compléter toutes les cases ");         
+    }
+    else{
+          document.querySelector('#AreaCafeteria').value += data + "\nCatégorie : Pétit déjeuner  \n" + "Nom : " + n1 + " \nDate de Réservation : "+ d1 +" jours" + " \nMontant à payer : " +  '$\n' +'\n';
+    }
+
+}
+
+const SaveCafeNourriture3 = () =>{
+
+  let n1 = document.getElementById("nameClient2").value;
+  let d1 = document.getElementById("dateReservation2").value;
+  let checkboxes = document.getElementsByName('supper');
+  for (let checkbox of checkboxes)
+    {    
+      if (checkbox.checked) {
+        document.body.append(checkbox.value + ' ,' );
+        data=checkbox.value
+      }
+
+    }
+    
+  if(document.getElementById('cochableSoup1').checked === false)
+      alert('Veuillez cochez une ou plusieurs case(s) pour votre petit déjeuner ')
+  else if( n1 == " "){
+      alert('Veuillez entrer votre nom');
+  }
+  else if(d1 == ''){
+      alert("Veuillez compléter toutes les cases ");         
+  }
+  else{
+        document.querySelector('#AreaCafeteria').value += data + "\nCatégorie : Pétit déjeuner  \n" + "Nom : " + n1 + " \nDate de Réservation : "+ d1 +" jours" + " \nMontant à payer : " +  '$\n' +'\n';
+  }
+
+}
+
+
+
+const annulerDej1 = () =>{
+  document.getElementById("nameClient").value = ''
+  document.getElementById("dateReservation").value = ''
+  document.getElementById("AreaCafeteria").value = ''
+  $(document).ready(function(){
+    $("#btnAnnuler1").click(function(){
+      $("#cochable1").prop("checked", false);
+    });
+  });
+  $(document).ready(function(){
+    $("#btnAnnuler1").click(function(){
+      $("#cochable2").prop("checked", false);
+    });
+  });
+  $(document).ready(function(){
+    $("#btnAnnuler1").click(function(){
+      $("#cochable3").prop("checked", false);
+    });
+  });
+  $(document).ready(function(){
+    $("#btnAnnuler1").click(function(){
+      $("#cochable4").prop("checked", false);
+    });
+  });
+  $(document).ready(function(){
+    $("#btnAnnuler1").click(function(){
+      $("#cochable5").prop("checked", false);
+    });
+  });
+  $(document).ready(function(){
+    $("#btnAnnuler1").click(function(){
+      $("#cochable6").prop("checked", false);
+    });
+  });
+}
+
+
+const annulerDej2 = () =>{
+  document.getElementById("nameClient1").value = ''
+  document.getElementById("dateReservation1").value = ''
+  document.getElementById("AreaCafeteria").value = ''
+  $(document).ready(function(){
+    $("#btnAnnuler2").click(function(){
+      $("#cochableDej1").prop("checked", false);
+    });
+  });
+  $(document).ready(function(){
+    $("#btnAnnuler2").click(function(){
+      $("#cochableDej2").prop("checked", false);
+    });
+  });
+  $(document).ready(function(){
+    $("#btnAnnuler2").click(function(){
+      $("#cochableDej3").prop("checked", false);
+    });
+  });
+  $(document).ready(function(){
+    $("#btnAnnuler2").click(function(){
+      $("#cochableDej4").prop("checked", false);
+    });
+  });
+  $(document).ready(function(){
+    $("#btnAnnuler2").click(function(){
+      $("#cochableDej5").prop("checked", false);
+    });
+  });
+  $(document).ready(function(){
+    $("#btnAnnuler2").click(function(){
+      $("#cochableDej6").prop("checked", false);
+    });
+  });
+}
+
+
+const annulerDej3 = () =>{
+  document.getElementById("nameClient2").value = ''
+  document.getElementById("dateReservation2").value = ''
+  document.getElementById("AreaCafeteria").value = ''
+  $(document).ready(function(){
+    $("#btnAnnuler3").click(function(){
+      $("#cochableSoup1").prop("checked", false);
+    });
+  });
+  $(document).ready(function(){
+    $("#btnAnnuler3").click(function(){
+      $("#cochableSoup2").prop("checked", false);
+    });
+  });
+  $(document).ready(function(){
+    $("#btnAnnuler3").click(function(){
+      $("#cochableSoup3").prop("checked", false);
+    });
+  });
+  $(document).ready(function(){
+    $("#btnAnnuler3").click(function(){
+      $("#cochableSoup4").prop("checked", false);
+    });
+  });
+  $(document).ready(function(){
+    $("#btnAnnuler3").click(function(){
+      $("#cochableSoup5").prop("checked", false);
+    });
+  });
+  $(document).ready(function(){
+    $("#btnAnnuler3").click(function(){
+      $("#cochableSoup6").prop("checked", false);
+    });
+  });
+}
+
+const SaveInCaf = () => {
+  var user = document.getElementById('AreaCafeteria').value;
+  if(user != ""){
+    var blob = new Blob([user], { type: "text/plain;charset=utf-8" });
+    saveAs(blob, "Cafétéria.txt");
+  }
+  else if(user == ""){
+    
+    alert("Veuillez faire une reservation");
+  }
+}
+
+
+
+
+$(document).ready(function(){
+  $(".cocher").click(function(){
+    $("#monCheckbox").prop("checked", true);
+  });
+  $(".decocher").click(function(){
+    $("#monCheckbox").prop("checked", false);
+  });
+});
 
 

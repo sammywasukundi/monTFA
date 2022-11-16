@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A propos du site web</title>
+</head>
+<body>
+    <p>Choose your vehicle:</p>
+    <div>
+    <input type="checkbox" id="bike" name="vehicle" value="bike" vérifié>
+    <label for="bike">Bike</label>
+    </div>
+    <div>
+    <input type="checkbox" id="scooter" name="vehicle" value="scooter" vérifié>
+    <label for="scooter">Scooter</label>
+    </div>
+    <div>
+    <input type="checkbox" id="car" name="vehicle" value="car">
+    <label for="car">Car</label>
+    </div>
+    <div>
+    <input type="checkbox" id="auto" name="vehicle" value="auto">
+    <label for="auto">Auto</label>
+    </div>
+    <div>
+    <button id="select" onclick="clic()">Get Checked Checkboxes</button>
+    </div>
+    <br><br><br><br><br>
+
+    <input type="button" value="Tout cocher" onClick="GereChkbox('div_chck','1');">&nbsp;&nbsp;&nbsp;
+    <input type="button" value="Tout décocher" onClick="GereChkbox('div_chck','0');">&nbsp;&nbsp;&nbsp;
+    <input type="button" value="Inverser la sélection" onClick="GereChkbox('div_chck','2');">
+
+    <script>        
+        // document.getElementById('select').onclick = function() {
+        //     var checkboxes = document.getElementsByName('vehicle');
+        //     for (var checkbox of checkboxes)
+        //     {
+        //         if (checkbox.checked) {
+        //             document.body.append(checkbox.value + ' ' );
+        //         }
+        //     }
+        // }
+        const clic = () => {
+            var checkboxes = document.getElementsByName('vehicle');
+            for (var checkbox of checkboxes)
+            {
+                if (checkbox.checked) {
+                    document.body.append(checkbox.value + ' ' );
+                }
+            }
+            document.getElementById('select').value;
+        }
+
+
+
+        function GereChkbox(conteneur, a_faire) 
+        { 
+            var blnEtat=null; 
+            var Chckbox = document.getElementById(conteneur).getElementsByTagName('input'); 
+            for (i in Chckbox) 
+            {
+                if (Chckbox[i].nodeName=="INPUT") 
+                if (Chckbox[i].getAttribute("type")=="checkbox") 
+                { 
+                blnEtat = (a_faire=='0') ? false : (a_faire=='1') ? 
+                true : 
+                    (document.getElementById(Chckbox[i].getAttribute("id")).checked) ? 
+                false : 
+                true;
+                    document.getElementById(Chckbox[i].getAttribute("id")).checked=blnEtat;
+                }   
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 header{
-    background: url(caf2.jpg);
+   background: linear-gradient(90deg, rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url('caf2.jpg');
 }
 .menus li a{
     color: white;
@@ -15,6 +15,9 @@ header{
     color: white;
  }
  .ico-contact-mail p{
+    color: white;
+ }
+ i .fa-sharp fa-solid fa-paper-plane fa-lg{
     color: white;
  }
 
@@ -165,6 +168,38 @@ header{
    letter-spacing: 1px;
 }
 
+.btn_header{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   top: 65%;
+   left: auto;
+}
+.btns{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* position: absolute; */
+   padding:  20px 20px;
+   margin: 0 10px;
+   font-weight: lighter;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 25px;
+   letter-spacing: 1px;
+   text-shadow: 1px 1px 1px rgb(197, 189, 189);
+   border-radius: 50px 50px 50px 50px;
+   border: none;
+   background: none;
+   color: white;
+   border: 2px solid ;
+}
+.btns:hover{
+   border: 5px solid rgb(255, 255, 255);
+   background-color: none;
+
+}
+
 .cochable{
    margin-left: -30px;
    margin-top: 5px;
@@ -179,7 +214,7 @@ header{
    height: 100px;
 }
 .formulaire{
-   margin-top: 100px;
+   margin-top: 45px;
 }
 .formulaire1{
    margin-top: 46px;

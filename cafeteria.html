@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/cafeteria.css">
     <link rel="stylesheet" href="fonts-6/css/all.css">
     <script src="js/FileSaver.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <title>Cafeteria</title>
 </head>
 <body>
@@ -20,10 +21,10 @@
                 
             </div>
             <div class="btn-connexion1"  id="ancreHaut">
-                <a href="#">Se connecter</a>
+                <a href="New_Login/main.html">Se connecter</a>
             </div>
             <div class="btn-inscription1">
-                <a href="#">S'inscrire</a>
+                <a href="New_Login/main.html">S'inscrire</a>
             </div>
             <ul class="menus">
                 <li><a href="index.html">Accueil</a></li>
@@ -45,7 +46,11 @@
                 
         </div>
         <div class="bienvenue">
-            <h1>Cafeteria</h1>
+            <h1 style="color: white; left: 30px; position: relative; ">Cafeteria</h1>
+        </div>
+        <div class="btn_header">
+            <a href="New_Login/main.html" style="text-decoration: none;"><button class="btns">Se connecter</button></a>
+            <a href="New_Login/main.html" style="text-decoration: none;"><button class="btns">S'inscrire</button></a> 
         </div>
 
          
@@ -90,18 +95,20 @@
                 <span class="titre">Petit déjeuner</span>
                 <span class="menu">au menu</span>
                 <div class="form1">
-                    <form action="" class="bouffe">
-                    <input type="checKbox" class="cochable">Thé + Pain + Oeufs<br>
-                        <input type="checKbox" class="cochable">Lait + Pain + Oeufs <br>
-                        <input type="checKbox" class="cochable">Lait + Pain <br>
-                        <input type="checKbox" class="cochable">Thé + Pain <br> 
+                    <form action="" class="bouffe" id="bouffe1">
+                        <input type="checKbox" name="ptit_dej" id="cochable1" value="Thé + Pain + Oeufs">Thé + Pain + Oeufs<br>
+                        <input type="checKbox" name="ptit_dej" id="cochable2" value="Lait + Pain + Oeufs">Lait + Pain + Oeufs <br>
+                        <input type="checKbox" name="ptit_dej" id="cochable3" value="Lait + Pain">Lait + Pain + gateau<br>
+                        <input type="checKbox" name="ptit_dej" id="cochable4" value="Thé + Pain">Thé + Pain + beignet<br>
+                        <input type="checKbox" name="ptit_dej" id="cochable5" value="Lait + galette + Oeufs">Lait + galette + Oeufs<br>
+                        <input type="checKbox" name="ptit_dej" id="cochable6" value="Thé + galette + Oeufs">Thé + galette + Oeufs
                     </form>
 
                     <form action="" class="formulaire">
                         <input type="text" id="nameClient" placeholder="nom" style="height: 5vh; width: 144px; border: none; background: rgb(189, 220, 228);"><br>
                         <input type="date" id="dateReservation" style="margin-top: 5px;width: 144px; height: 5vh; border: none; background: rgb(189, 220, 228);"><br>
-                        <button id="btnValider1"  style="margin-top: 5px; width: 70px; height: 5vh; border: none; ">Valider</button>
-                        <button id="btnAnnuler1" style="margin-top: 5px; width: 70px; height: 5vh; border: none;" >Annuler</button>
+                        <button id="btnValider1"  style="margin-top: 5px; width: 70px; height: 5vh; border: none;"  onclick="SaveCafeNourriture1()">Valider</button>
+                        <button id="btnAnnuler1" style="margin-top: 5px; width: 70px; height: 5vh; border: none;" onclick="annulerDej1()">Annuler</button>
                     </form>
                 </div>
 
@@ -116,18 +123,19 @@
                 <span class="menu">au menu</span>
                 <div class="form1">
                    <form action="" class="bouffe">
-                        <input type="checKbox" class="cochable">Riz + Haricots + Choux + fruits<br>
-                        <input type="checKbox" class="cochable">Plantains + Haricots + Choux + fruits<br>
-                        <input type="checKbox" class="cochable">Pommes de terre + Haricots + Choux + fruits<br>
-                        <input type="checKbox" class="cochable">Pommes de terre + Haricots blanc + Choux <br> 
-                        <input type="checKbox" class="cochable">Plantains + Haricots blanc + Choux <br> 
-                        <input type="checKbox" class="cochable">Riz+ Haricots blanc + Choux <br> 
+                        <input type="checKbox" name="dej" id="cochableDej1" value="Riz + Haricots + Choux + fruits">Riz + Haricots + Choux + fruits<br>
+                        <input type="checKbox" name="dej" id="cochableDej2" value="Plantains + Haricots + Choux + fruits">Plantains + Haricots + Choux + fruits<br>
+                        <input type="checKbox" name="dej" id="cochableDej3" value="Pommes de terre + Haricots + Choux + fruits">Pommes de terre + Haricots + Choux + fruits<br>
+                        <input type="checKbox" name="dej" id="cochableDej4" value="Pommes de terre + Haricots blanc + Choux">Pommes de terre + Haricots blanc + Choux <br> 
+                        <input type="checKbox" name="dej" id="cochableDej5" value="Plantains + Haricots blanc + Choux ">Plantains + Haricots blanc + Choux <br> 
+                        <input type="checKbox" name="dej" id="cochableDej6" value="Riz+ Haricots blanc + Choux">Riz+ Haricots blanc + Choux <br> 
+                        
                     </form> 
                     <form action="" class="formulaire1">
-                        <input type="text" id="nameClient" placeholder="nom" style="height: 5vh;  width: 144px; border: none; background: rgb(189, 220, 228);"><br>
-                        <input type="date" id="dateReservation" style="margin-top: 5px; width: 144px; height: 5vh; border: none; background: rgb(189, 220, 228);"><br>
-                        <button id="btnValider1"  style="margin-top: 5px; width: 70px; height: 5vh; border: none;">Valider</button>
-                        <button id="btnAnnuler1" style="margin-top: 5px; width: 70px; height: 5vh; border: none;" >Annuler</button>
+                        <input type="text" id="nameClient1" placeholder="nom" style="height: 5vh;  width: 144px; border: none; background: rgb(189, 220, 228);"><br>
+                        <input type="date" id="dateReservation1" style="margin-top: 5px; width: 144px; height: 5vh; border: none; background: rgb(189, 220, 228);"><br>
+                        <button id="btnValider2"  style="margin-top: 5px; width: 70px; height: 5vh; border: none;" onclick="SaveCafeNourriture2()">Valider</button>
+                        <button id="btnAnnuler2" style="margin-top: 5px; width: 70px; height: 5vh; border: none;" onclick="annulerDej2()">Annuler</button>
                     </form>
                 </div>
                 <div class="icon">
@@ -140,18 +148,18 @@
                 <span class="menu">au menu</span>
                 <div class="form1">
                    <form action="" class="bouffe">
-                        <input type="checKbox" class="cochable">Pâte + Sombé + Choux-fleurs + Arachides<br>
-                        <input type="checKbox" class="cochable">Pâte + Autres légumes + Choux-fleurs<br>
-                        <input type="checKbox" class="cochable">Fritte + Mayonnaise + oeufs + pain<br>
-                        <input type="checKbox" class="cochable">Pâte + Autres légumes + Aubérgines <br> 
-                        <input type="checKbox" class="cochable">Plantains + Haricots blanc + Choux <br> 
-                        <input type="checKbox" class="cochable">Riz+ Sombé + Choux-fleurs + Sombé<br> 
+                        <input type="checKbox" name="supper" id="cochableSoup1" value="Pâte + Sombé + Choux-fleurs + Arachides">Pâte + Sombé + Choux-fleurs + Arachides<br>
+                        <input type="checKbox" name="supper" id="cochableSoup2" value="Pâte + Autres légumes + Choux-fleurs">Pâte + Autres légumes + Choux-fleurs<br>
+                        <input type="checKbox" name="supper" id="cochableSoup3" value="Fritte + Mayonnaise + oeufs + pain">Fritte + Mayonnaise + oeufs + pain<br>
+                        <input type="checKbox" name="supper" id="cochableSoup4" value="Pâte + Autres légumes + Aubérgines">Pâte + Autres légumes + Aubérgines <br> 
+                        <input type="checKbox" name="supper" id="cochableSoup5" value="Plantains + Haricots blanc + Choux">Plantains + Haricots blanc + Choux <br> 
+                        <input type="checKbox" name="supper" id="cochableSoup6" value="Riz+ Sombé + Choux-fleurs + Sombé">Riz+ Sombé + Choux-fleurs + Sombé<br> 
                     </form> 
                     <form action="" class="formulaire2">
-                        <input type="text" id="nameClient" placeholder="nom" style="height: 5vh;  width: 144px; border: none; background: rgb(189, 220, 228);"><br>
-                        <input type="date" id="dateReservation" style="margin-top: 5px; width: 144px; height: 5vh; border: none; background: rgb(189, 220, 228);"><br>
-                        <button id="btnValider1"  style="margin-top: 5px; width: 70px; height: 5vh; border: none;">Valider</button>
-                        <button id="btnAnnuler1" style="margin-top: 5px; width: 70px; height: 5vh; border: none;" >Annuler</button>
+                        <input type="text" id="nameClient2" placeholder="nom" style="height: 5vh;  width: 144px; border: none; background: rgb(189, 220, 228);"><br>
+                        <input type="date" id="dateReservation2" style="margin-top: 5px; width: 144px; height: 5vh; border: none; background: rgb(189, 220, 228);"><br>
+                        <button id="btnValider3"  style="margin-top: 5px; width: 70px; height: 5vh; border: none;" onclick="SaveCafeNourriture3()">Valider</button>
+                        <button id="btnAnnuler3" style="margin-top: 5px; width: 70px; height: 5vh; border: none;" onclick="annulerDej3()">Annuler</button>
                     </form>
                 </div>
                 <div class="icon">
@@ -163,7 +171,7 @@
         <textarea id="AreaCafeteria" rows="8" cols="30" style="margin: 140px 510px ;">
    
         </textarea>
-        <button  type="button" id="save" onclick="Enregistrer();" style="margin: 200px -505px ; position: absolute; width: 7vw; height: 5vh; border-radius: 15px 15px 15px 15px;">Enregistrer</button>
+        <button  type="button" id="save" onclick="SaveInCaf();" style="margin: 200px -505px ; position: absolute; width: 7vw; height: 5vh; border-radius: 15px 15px 15px 15px;">Enregistrer</button>
         
         <!-- fin du slider -->
 
@@ -176,6 +184,7 @@
         </aside> -->
         
 
+  </body>
 
 
 
@@ -190,16 +199,16 @@
                 <a href="#">Se connecter</a>
             </div>
             <div class="btn-inscription">
-                <a href="#">S'inscrire</a>
+                <a href="New_Login/main.html">S'inscrire</a>
             </div>
             <input type="checkbox" name="checkbox" value="remember" class="me"><span class="me2">Se souvenir de moi</span>
         </div>
         <div class="liens">
             <div class="Ghouse">
                 <h3>Guest House</h3>
-                <a href="#"><h4>Nairobi</h4></a>
-                <a href="#"><h4>Kinshasa</h4></a>
-                <a href="#"><h4>Autres</h4></a>
+                <a href="geust house.html"><h4>Nairobi</h4></a>
+                <a href="geust house.html"><h4>Kinshasa</h4></a>
+                <a href="geust house.html"><h4>Autres</h4></a>
             </div>
             <div class="caf">
                 <h3>Cafétéria</h3>
@@ -215,7 +224,7 @@
             <div class="contact">
                 <h3>Autres</h3>
                 <div class="btnpropos">
-                    <a href="#">A propos de nous</a>
+                    <a href="propos.html">A propos de nous</a>
                 </div>
             </div>
         </div>
@@ -223,30 +232,30 @@
         
         <div class="menu-bas">
             <div class="facebook">
-                <a href="#">
+                <a href="http://facebook.com">
                     <i class="fa-brands fa-facebook-f fa-2x"></i>
                 </a>
                 
             </div>
             <div class="github">
-                <a href="#">
+                <a href="https://github.com/sammywasukundi">
                     <i class="fa-brands fa-github fa-2x"></i>
                 </a>
             </div>
             <div class="whatsapp">
-                <a href="#">
+                <a href="https://www.whatsapp.com/?lang=fr">
                     <i class="fa-brands fa-whatsapp fa-2x"></i>
                 </a>
 
             </div>
             <div class="instagram">
-                <a href="#">
+                <a href="https://www.instagram.com">
                     <i class="fa-brands fa-instagram fa-2x"></i>
                 </a>
 
             </div>
             <div class="telegram">
-                <a href="#">
+                <a href="https://web.telegram.org">
                     <i class="fa-brands fa-telegram fa-2x"></i>
                 </a>
 

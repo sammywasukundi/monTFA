@@ -26,6 +26,38 @@ p{
 
 
 }
+.btn_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 65%;
+    left: auto;
+ }
+ .btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+    padding:  20px 20px;
+    margin: 0 10px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    border-radius: 50px 50px 50px 50px;
+    border: none;
+    background: none;
+    color: rgb(255, 255, 255);
+    border: 3px solid ;
+ }
+ .btns:hover{
+    border: 5px solid rgb(255, 255, 255);
+    background-color: none;
+    color: rgb(255, 255, 255);
+ 
+ }
 
 /* ccs de nairobi*/
 
