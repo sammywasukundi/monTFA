@@ -71,6 +71,15 @@
 .btn-inscription1 a:hover{
     color: rgb(0, 0, 0); 
 }
+a.active{
+   border: 1px solid rgb(0, 0, 0);
+   box-shadow: 1px 1px 0px 0px rgb(0, 0, 0);
+   transition: .5s;
+}
+a:hover{
+   /* border: 1px solid white; */
+   transition: .5s; 
+}
 
 .conteneur .menus{
     left: 40%;
@@ -190,40 +199,25 @@ header{
  
  }
 /*............*/
-@media screen and (max-width: 1000px){
-    header .menus{
-        width: 96%;
-    }
+@media all and (max-width: 1000px){
     .conteneur{
-        width: 40%;
-        display: block;
+        width: 100%;    
     }
-    .menus li{
-        font-size: 12px;
-        width: 96%;
-        
-        
+    .logo{
+        width: 90%;
+        float: left;
+        margin-left: -35px;
+    }
+    .btn-connexion1{
+        display: none;
+    }
+    .btn-inscription1{
+        display: none;
     }
     .menus{
-        /*text-align: left;
-        
-        
-        align-items: flex-start;
-        */
-        width: 100%;
-        flex-direction: row;
-        display: flex;
-        justify-content: flex-start;
-        background: blue;
+        display: none;
     }
-    .bienvenue{
-        top: 30px;
-        
-    }
-    .bienvenue h1{
-        font-size: 60px;
-        box-shadow: none;
-    }
+    
 }
 .pub{
 

@@ -20,6 +20,11 @@ header{
  i .fa-sharp fa-solid fa-paper-plane fa-lg{
     color: white;
  }
+ a.active2{
+   border: 1px solid rgb(255, 255, 255);
+   box-shadow: 1px 1px 0px 0px rgb(255, 255, 255);
+   transition: .5s;
+}
 
 /*debut du slider*/
  .slide-container{
@@ -230,6 +235,42 @@ header{
    position: absolute;
    top: 75vh;
    
+}
+@media all and (max-width: 1000px){
+   .slide-container {
+       display: none;
+   }
+   .btn_header{
+      display: flex;
+      width: 90%;
+   }
+   .btns{
+      width: 95%;
+      margin: 0 5px ;
+   }
+   h1{
+      text-align: center;
+      left: 0;
+   }
+   #titre{
+      font-size: 100px;
+      text-align: center;
+      margin-left: -55px;
+      margin-top: 80px;
+   }
+   .menu_container{
+      width: 100%;
+   }
+   #petit_dejeuner{
+      width: 100%;
+   }
+   .formulaire{
+      float: left;
+   }
+   .dejeuner .titre .menu .form1 .bouffe {
+      text-align: center;
+   }
+
 }
 
 

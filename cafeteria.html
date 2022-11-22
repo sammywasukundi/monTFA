@@ -29,8 +29,8 @@
             <ul class="menus">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="geust house.html">Guest house</a></li> 
-                <li><a href="cafeteria.html">Cafétéria</a></li>
-                <li><a href="#">A propos de nous</a></li>
+                <li><a href="cafeteria.html" class="active2">Cafétéria</a></li>
+                <li><a href="propos.html">A propos de nous</a></li>
             </ul>
             <div class="ico-contact">
                 <a href="#">
@@ -46,7 +46,7 @@
                 
         </div>
         <div class="bienvenue">
-            <h1 style="color: white; left: 30px; position: relative; ">Cafeteria</h1>
+            <h1  id="titre" style="color: white; left: 30px; position: relative; ">Cafeteria</h1>
         </div>
         <div class="btn_header">
             <a href="New_Login/main.html" style="text-decoration: none;"><button class="btns">Se connecter</button></a>
@@ -90,6 +90,12 @@
                 </div>
             </div>
         </div>
+        <p style="font-weight: lighter;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 25px;
+            text-align: center;">
+            Faites votre choix de nourriture selon votre appréciation à seulement 1$ le repas
+        </p>
         <section class="menu_container">
             <div class="dejeuner" id="petit_dejeuner">
                 <span class="titre">Petit déjeuner</span>
@@ -98,8 +104,8 @@
                     <form action="" class="bouffe" id="bouffe1">
                         <input type="checKbox" name="ptit_dej" id="cochable1" value="Thé + Pain + Oeufs">Thé + Pain + Oeufs<br>
                         <input type="checKbox" name="ptit_dej" id="cochable2" value="Lait + Pain + Oeufs">Lait + Pain + Oeufs <br>
-                        <input type="checKbox" name="ptit_dej" id="cochable3" value="Lait + Pain">Lait + Pain + gateau<br>
-                        <input type="checKbox" name="ptit_dej" id="cochable4" value="Thé + Pain">Thé + Pain + beignet<br>
+                        <input type="checKbox" name="ptit_dej" id="cochable3" value="Lait + Pain + gateau">Lait + Pain + gateau<br>
+                        <input type="checKbox" name="ptit_dej" id="cochable4" value="Thé + Pain + beignet">Thé + Pain + beignet<br>
                         <input type="checKbox" name="ptit_dej" id="cochable5" value="Lait + galette + Oeufs">Lait + galette + Oeufs<br>
                         <input type="checKbox" name="ptit_dej" id="cochable6" value="Thé + galette + Oeufs">Thé + galette + Oeufs
                     </form>
@@ -107,7 +113,7 @@
                     <form action="" class="formulaire">
                         <input type="text" id="nameClient" placeholder="nom" style="height: 5vh; width: 144px; border: none; background: rgb(189, 220, 228);"><br>
                         <input type="date" id="dateReservation" style="margin-top: 5px;width: 144px; height: 5vh; border: none; background: rgb(189, 220, 228);"><br>
-                        <button id="btnValider1"  style="margin-top: 5px; width: 70px; height: 5vh; border: none;"  onclick="SaveCafeNourriture1()">Valider</button>
+                        <button id="btnValider1"  style="margin-top: 5px; width: 70px; height: 5vh; border: none;" >Valider</button>
                         <button id="btnAnnuler1" style="margin-top: 5px; width: 70px; height: 5vh; border: none;" onclick="annulerDej1()">Annuler</button>
                     </form>
                 </div>
@@ -134,7 +140,7 @@
                     <form action="" class="formulaire1">
                         <input type="text" id="nameClient1" placeholder="nom" style="height: 5vh;  width: 144px; border: none; background: rgb(189, 220, 228);"><br>
                         <input type="date" id="dateReservation1" style="margin-top: 5px; width: 144px; height: 5vh; border: none; background: rgb(189, 220, 228);"><br>
-                        <button id="btnValider2"  style="margin-top: 5px; width: 70px; height: 5vh; border: none;" onclick="SaveCafeNourriture2()">Valider</button>
+                        <button id="btnValider2"  style="margin-top: 5px; width: 70px; height: 5vh; border: none;" >Valider</button>
                         <button id="btnAnnuler2" style="margin-top: 5px; width: 70px; height: 5vh; border: none;" onclick="annulerDej2()">Annuler</button>
                     </form>
                 </div>
@@ -158,7 +164,7 @@
                     <form action="" class="formulaire2">
                         <input type="text" id="nameClient2" placeholder="nom" style="height: 5vh;  width: 144px; border: none; background: rgb(189, 220, 228);"><br>
                         <input type="date" id="dateReservation2" style="margin-top: 5px; width: 144px; height: 5vh; border: none; background: rgb(189, 220, 228);"><br>
-                        <button id="btnValider3"  style="margin-top: 5px; width: 70px; height: 5vh; border: none;" onclick="SaveCafeNourriture3()">Valider</button>
+                        <button id="btnValider3"  style="margin-top: 5px; width: 70px; height: 5vh; border: none;" >Valider</button>
                         <button id="btnAnnuler3" style="margin-top: 5px; width: 70px; height: 5vh; border: none;" onclick="annulerDej3()">Annuler</button>
                     </form>
                 </div>
@@ -196,7 +202,8 @@
             <h3>Inscrvivez-vous sur notre site</h3>
             <input type="email" name="e-mail" id="e-mail" placeholder="Votre e-mail" class="mail"/>
             <div class="btn-connexion">
-                <a href="#">Se connecter</a>
+                <!-- <a href="#" onclick="connected()" id="e_mail">Se connecter</a> -->
+                <button onclick="connected()" id="e_mail">Se connecter</button>
             </div>
             <div class="btn-inscription">
                 <a href="New_Login/main.html">S'inscrire</a>
@@ -267,7 +274,7 @@
             </div>
             <div class="adress">
                 <p>
-                    brosammy1et2@gmail.com <br>brosammy1et2@gmail.com <br>brosammy1et2@gmail.com
+                    brosammy1et2@gmail.com <br>mvgclovis@gmail.com <br>brosammy1et2@gmail.com
                 </p>
             </div>
         </div>
