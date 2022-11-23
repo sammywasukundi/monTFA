@@ -727,12 +727,16 @@ $(document).ready(function(){
 // boutons de connexion
 
 const connected = () =>{
-  var mail = document.getElementById('e_mail').value
-  if( mail === ' ')
-    alert('Veuillez saisir votre adresse mail')
-  else
-    document.location.href="geust house.html";
-    alert('Bienvenue !')
+  // var mail = document.getElementById('e_mail')
+  // if( mail.value == ''){
+  //   alert('Veuillez saisir votre adresse mail')
+  // } 
+  // else{
+  //   document.location.href="geust house.html";
+  //   alert('Bienvenue !') 
+  // }
+  alert('hey')
+    
 }
 
 e_mail.addEventListener("click", (e)=>{

@@ -64,7 +64,8 @@ function Envoyer(){
 
 
     else{ 
-        document.location.href="index.html";	
+        document.location.href="index.html";
+        alert('Bienvenue ! ' + myInputNom.value);
     }
     
     }
@@ -106,7 +107,7 @@ function Envoyer(){
         } 
         else if(myRegexEmail.test(myInputEmail.value)==false){
                 let myError=document.getElementById("error1");
-                myError.innerHTML="errer";
+                myError.innerHTML="erreur";
                 myError.style.color="red";
                 e.preveventDefault();
         }
@@ -127,7 +128,8 @@ function Envoyer(){
     
     
         else{ 
-            document.location.href="index.html";	
+            document.location.href="index.html";
+            alert('Bienvenue ! ' + myInputNom.value);	
         }
         
         }
