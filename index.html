@@ -1,76 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="New_Login/styleConnexion.css">
-    <title>login form</title>
-</head>
-<body>
-    <div class="container">
-        <!-- signup form -->
-        <div class="logon-wrap  active">
-            <div class="title">
-                <h1>Connexion</h1>
-            </div>
-            <form action="/acceuil.html" method="post">
-                <div class="input-area">
-                    <input type="email" id="email" autocomplete="off" name="email" required>
-                    <label for="email">Email</label>
+    <head>
+        <title>Accueil</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="fonts-6/css/all.css">
+        <script src="New_Login/script.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="conteneur">
+                <div class="logo">
+                    <a href="https://www.google.com/maps/place/Universit%C3%A9+Adventiste+Lukanga/@-0.0589724,29.2976679,17z/data=!3m1!4b1!4m5!3m4!1s0x19df873c1373b7b3:0x21a6e5509a7192d6!8m2!3d-0.0589778!4d29.2998566">
+                        <img src="icôns/loger.png" alt="">
+                    </a>
+                    
+                </div>
+                <div class="btn-connexion1"  id="ancreHaut">
+                    <a href="New_Login/main.html">Se connecter</a>
+                </div>
+                <div class="btn-inscription1">
+                    <a href="New_Login/main.html">S'inscrire</a>
+                </div>
+                <ul class="menus" >
+                    <li><a href="#" class="active">Accueil</a></li>
+                    <li><a href="geust house.html">Guest house</a></li> 
+                    <li><a href="cafeteria.html">Cafétéria</a></li>
+                    <li><a href="propos.html">A propos de nous</a></li>
+                </ul>
+                <div class="ico-contact">
+                    <a href="#">
+                        <i class="fa-sharp fa-solid fa-paper-plane fa-lg"></i>
+                    </a>
+                    
+                </div>
+                <div class="ico-contact-mail">
+                    <p>Mail</p>
                 </div>
                 
-                <div class="input-area">
-                    <input type="password" id="password" name="password" required>
-                    <label for="password">password</label>
-                </div>
 
-               <!-- <div class="mot">
-                    <a href="#" class="mot">Forgot password</a>
-                </div>-->
-                <span id="error" class="error" > </span>
-                <div class="button-area">
-                    <button class="login-btn" onclick="Envoyer()">Connexion</button>
-                </div>
-
-                <div class="for-toggle-area">
-                    <p><span id="toggle-signup" >S'inscrire</span></p>
-                </div>
-            </form>
-        </div>
-<!-- login form -->
-        <div class="signup-wrap">
-            <div class="title">
-                <h1>S'inscrire</h1>
+                    
             </div>
-            <form action="/acceuil.html" method="post">
-                <div class="input-area">
-                    <input type="text" id="nom1" autocomplete="off" name="nom" required>
-                    <label for="nom">Nom</label>
+            <div class="bienvenue" >
+                <h1 style="text-shadow: 2px 2px 2px rgb(0, 0, 0); color: white; left: 40px; position: relative;">Trouvez votre prochain séjour ici</h1>
+            </div>
+            <div class="btn_header" style="top: 80%;">
+                <a href="index.html" style="text-decoration: none;"><button class="btns">Se connecter</button></a>
+                <a href="index.html" style="text-decoration: none;"><button class="btns">S'inscrire</button></a> 
+            </div>
+             
+        </header>
+        <div class="pub">
+            <h1>Le Guest house est le choix idéal pour vous et votre familia</h1> 
+            <h3>Nos offres pour le Guest house, un endroit idéal pour vous</h3>
+        </div>
+        <div class="guest">
+            <div class="nairobi">
+                <img src="images/images2.jpg" width="100%" height="100%" alt="">
+                <div class="overlay">
+                    <div class="content">
+                        <h2>Nairobi</h2>
+                        <p>Que des chambres de luxes !</p>
+                        <div class="btn">
+                           <a href="#">Visiter</a> 
+                        </div>
+                        
+                    </div>
                 </div>
-
-                <div class="input-area">
-                    <input type="email" id="email1" autocomplete="off" name="email" required>
-                    <label for="email">Email</label>
+            </div>
+            <div class="kinshasa">
+                <img src="images/index.jpg" width="100%" height="100%" alt="">
+                <div class="overlay2">
+                    <div class="content2">
+                        <h2>kinshasa</h2>
+                        <p>Chambres bien équipées !</p>
+                        <div class="btn2">
+                           <a href="#">Visiter</a> 
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="autre">
+                <img src="images/wc-hotel-e1617208970145.jpg" width="100%" height="100%" alt="">
+                <div class="overlay3">
+                    <div class="content3">
+                        <h2>Autres</h2>
+                        <p>A vous le choix !</p>
+                        <div class="btn3">
+                           <a href="#">Visiter</a> 
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="etiquette">
+            <div class="nairobi1">
+                <h2>Nairobi</h2>
+                <p>Une partie bien aerée avec quatre chambres confortables équipées des salles de bain chacune mais aussi des toilettes.
+                     On y trouve également une salle à manger et une salle de repos</p>
+                <p>20$ par nuit trois repas y compris</p>
+            </div>
+            <div class="kinshasa1">
+                <h2>kinshasa</h2>
+                <p>Une partie bien aerée avec quatre chambres confortables équipées des salles de bain mais aussi des toilettes.
+                     On y trouve également une salle à manger et une salle de repos</p>
+                <p>10$ par nuit trois repas y compris</p>
+            </div>
+            <div class="autre1">
+                <h2>Autres</h2>
+                <p>Une partie bien aerée avec dix chambres confortables bine équipées .
+                     On y trouve également une salle à manger et une salle de repos</p>
+                <p>7$ par nuit trois repas y compris</p>
+            </div>
+        </div>
+        <div class="pubcaf">
+            <h1>Une Cafétéria</h1> 
+            <h3>Un repas bien équilibré à votre disposition !</h3>
+        </div>
+        <div class="logo1">
+            <img src="icôns/nourriture-saine.png">
+        </div>
+        <div class="logo2">
+            <img src="icôns/repas.png">
+        </div>
+        <div class="etiquettecaf">
+            <div class="riz">
+                <img src="images/photo-bol-de-riz.jpg" alt="" height="100%" width="100%">
+            </div>
+            <div class="patates">
+                <img src="images/lima.png" alt="" height="100%" width="100%">
+            </div>
+            <div class="pommes">
+                <img src="images/pommes de terre.jpg" alt="" height="100%" width="100%">
+            </div>
+            <div class="haricots">
+                <img src="images/pommes-de-terre-cuites-au-four-parfaites.jpg" alt="" height="100%" width="100%">
+            </div>
+            <div class="melange">
+                <img src="images/Riz-blanc-aux-haricots-rouges.jpg" alt="" height="100%" width="100%">
+            </div>
+        </div>
+        <div class="pubcaf2">
+            <h3>Un repas délicieux selon votre désir ! <br>Toutes sortes d'aliments de la région ! <br>On sert la qualité mais aussi la quantité </h3>
+        </div>
+        <div class="mot">
+                <p>
+                    Une partie bien aerée avec quatre chambres confortables équipées
+                     des salles de bain chacune mais aussi des toilettes.
+                    On y trouve également une salle à manger et une salle de repos
+                    Une partie bien aerée avec quatre chambres confortables 
+                    équipées des salles de bain mais aussi des toilettes.
+                    On y trouve également une salle à manger et une salle de repos
+                    Une partie bien aerée avec dix chambres confortables bine équipées.
+                    On y trouve également une salle à manger et une salle de repos.
+                </p>
+            </div>
+        
+            <footer>
+            
+                <div class="inscription">
+                    <h3>Inscrvivez-vous sur notre site</h3>
+                    <input type="email" name="e-mail" id="e-mail" placeholder="Votre e-mail" class="mail"/>
+                    <div class="btn-connexion">
+                        <a href="New_Login/main.html">Se connecter</a>
+                    </div>
+                    <div class="btn-inscription">
+                        <a href="New_Login/main.html">S'inscrire</a>
+                    </div>
+                    <input type="checKbox" name="Suspense" class="me"><span class="me2">Se souvenir de moi</span>
+                </div>
+                <div class="liens">
+                    <div class="Ghouse">
+                        <h3>Guest House</h3>
+                        <a href="geust house.html"><h4>Nairobi</h4></a>
+                        <a href="geust house.html"><h4>Kinshasa</h4></a>
+                        <a href="geust house.html"><h4>Autres</h4></a>
+                    </div>
+                    <div class="caf">
+                        <h3>Cafétéria</h3>
+                        <img src="icôns/nourriture-saine.png" alt="">
+                        <div class="overlaycaf">
+                            <div class="contentcaf">
+                                <div class="btncaf">
+                                    <a href="cafeteria.html">Voir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <h3>Autres</h3>
+                        <div class="btnpropos">
+                            <a href="propos.html">A propos de nous</a>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="input-area">
-                    <input type="password" id="password1" name="password" required >
-                    <label for="password">password</label>
+                
+                <div class="menu-bas">
+                    <div class="facebook">
+                        <a href="http://facebook.com">
+                            <i class="fa-brands fa-facebook-f fa-2x"></i>
+                        </a>
+                        
+                    </div>
+                    <div class="github">
+                        <a href="https://github.com/sammywasukundi">
+                            <i class="fa-brands fa-github fa-2x"></i>
+                        </a>
+                    </div>
+                    <div class="whatsapp">
+                        <a href="https://www.whatsapp.com/?lang=fr">
+                            <i class="fa-brands fa-whatsapp fa-2x"></i>
+                        </a>
+        
+                    </div>
+                    <div class="instagram">
+                        <a href="https://www.instagram.com">
+                            <i class="fa-brands fa-instagram fa-2x"></i>
+                        </a>
+        
+                    </div>
+                    <div class="telegram">
+                        <a href="https://web.telegram.org">
+                            <i class="fa-brands fa-telegram fa-2x"></i>
+                        </a>
+        
+                    </div>
+                    <div class="numero">
+                        <p>
+                            +243999576452 <br>+243997929926 <br>+243979440001
+                        </p>
+                    </div>
+                    <div class="adress">
+                        <p>
+                            brosammy1et2@gmail.com <br>mvgclovis@gmail.com <br>shekinahrubenfundi@gmail.com
+                        </p>
+                    </div>
                 </div>
-
-                <span id="error1" ></span>
-                <div class="button-area">
-                    <button class="Signup-btn" onclick="Connection()" >S'inscrire</button>
+                <div class="bas">
+                    <p>Copyright ©2022 All rights reserved </p>
                 </div>
-
-                <div class="for-toggle-area">
-                    <p> <span id="toggle-login">Connexion</span></p>
+                <div>
+                    <a href="#ancreHaut"><img src="icôns/cliquez-sur.png"  width="50px" height="60px" style="float: right;" alt=""></a>
                 </div>
-            </form>
-        </div>
-    </div>
-
-    <script src="New_Login/script.js"></script>
-</body>
+            </footer>
+             
+        
+       
+        <script src="js/index.js"></script>
+    </body>
 </html>
