@@ -64,7 +64,7 @@ function Envoyer(){
 
 
     else{ 
-        document.location.href="acceuil.html";
+        document.location.href="index.html";
         alert('Bienvenue ! ' + myInputNom.value);
     }
     
@@ -128,7 +128,7 @@ function Envoyer(){
     
     
         else{ 
-            document.location.href="acceuil.html";
+            document.location.href="index.html";
             alert('Bienvenue ! ' + myInputNom.value);	
         }
         
